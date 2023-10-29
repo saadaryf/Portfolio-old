@@ -1,0 +1,49 @@
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+    h2{
+        width: 90%;
+    }
+    h6{
+        width: 80%;
+    }
+    .profile {
+        flex-direction: column;
+        margin: auto;
+    }
+    .profile div{
+        width: 90%;
+    }
+    .more-btn,
+    .contact-btn{
+        display: none;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 90% !important;
+        text-align: center;
+    }
+    form{
+        width: 80%;
+    }
+    .line{
+        margin-top: 15%;
+    }
+
+}
+
+/* dark mode btn */
+#dark-mode-button {
+    position: fixed;
+    right: 2%; 
+    top: -2.4%; 
+    z-index: 100;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+#dark-mode-button svg{
+    width: 30px;
+
+}
