@@ -6,6 +6,9 @@
     -> personal text = font-family: 'Pacifico', cursive;
     -> common text = font-family: 'Roboto', sans-serif;
 */
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     padding: 0;
@@ -110,7 +113,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     justify-content: space-evenly;
     position: relative;
     top: 1%;
-    height: clamp(300px,18%,500px);
+    height: clamp(300px, 20%, 600px);
     width: 90%;
     margin: auto;
     align-items: stretch;
@@ -128,7 +131,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
         inset 0px 1px 10px rgba(255, 255, 255, 0.5),
         inset 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: auto;
-    transition: border 0.3s ease; 
+    transition: border 0.3s ease;
 }
 
 .profile div::before {
@@ -143,11 +146,11 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     border-image: linear-gradient(90deg, #ff2f00, #0099ff);
     border-image-slice: 2;
     opacity: 0;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
 
 .profile div:hover::before {
-    opacity: 1; 
+    opacity: 1;
 }
 
 
@@ -178,51 +181,53 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     width: 5%;
     margin: 34px 2% 2% 2%;
-    text-align: left;
+    text-align: center;
     padding: 10px 30px;
     box-shadow:
         -5px -5px 4px rgba(255, 255, 255, 0.7),
-        /* Outer top-left shadow */
         5px 5px 4px rgba(0, 0, 0, 0.3);
-    /* Outer bottom-right shadow */
-    transition: box-shadow 0.5s;
-
     /* Hover effect */
     &:hover {
         box-shadow:
             inset 0px 1px 10px rgba(255, 255, 255, 0.7),
-            /* Inner top shadow */
             inset 1px 1px 3px rgba(0, 0, 0, 0.3);
-        /* Inner bottom shadow */
     }
 }
 
-.qualifications {
-    height: clamp(350px,90vh,650px)
-}
 
 .contact h5,
-.projects h5{
+.projects h5 {
     font-size: 35px;
+}
+.qualifications span li{
+    font-size: 18px !important; 
 }
 .qualifications h5 {
     font-size: 24px;
 }
-.contact h5{
+.contact h5 {
     margin-top: 7%;
     margin-bottom: 3%;
 }
-.projects h5{
+
+.projects h5 {
     margin-top: 9%;
 }
+
 .qualifications div {
     width: 38%;
+    overflow: hidden;
 }
 
-.qualifications p {
-    font-size: 17px;
+.qualifications ul li {
+    font-size: 15px;
+    letter-spacing: 2px;
+    list-style-position: inside;
 }
-
+.qualifications ul {
+    list-style: none;
+    margin-left: 2%;
+}
 .projects {
     margin-top: 7%;
     width: 100% !important;
@@ -272,20 +277,31 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             inset 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
 }
-.disabled-link{
+
+.disabled-link {
     cursor: not-allowed;
     color: gray !important;
 }
-.contact{
+
+
+
+
+
+
+
+
+.contact {
     position: relative;
     display: flex;
     flex-direction: column;
 }
-form{
+
+form {
     position: relative;
     margin: auto;
     width: 40%;
 }
+
 form textarea,
 form input {
     position: relative;
@@ -322,35 +338,49 @@ form button {
 form button:hover {
     background: rgb(48, 47, 47);
 }
-.line{
+
+.line {
     position: relative;
     width: 100%;
     height: 1px;
     background: black;
     margin-top: 5%;
 }
+
 .footer {
     position: relative;
     color: gray;
     font-weight: 900;
-    font-family: 'Inconsolata', monospace;
-    letter-spacing: 2px;
+    font-size: 11px;
 }
-.footer a{
+
+.footer a {
     color: rgb(88, 88, 246);
     text-decoration: none;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: blue;
     text-decoration: underline;
 }
+
 .copyright {
     padding: 10px;
     text-align: left;
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-evenly; 
-    align-items: left; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
 }
 
+#topBtn {
+    box-shadow:
+        4px 4px 8px rgba(0, 0, 0, 0.1),
+        -4px -4px 8px rgba(255, 255, 255, 0.555);
+}
 
+#topBtn:hover {
+    box-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.1),
+        -2px -2px 5px rgba(255, 255, 255, 0.1);
+    background-color: #f5f5f5;
+}

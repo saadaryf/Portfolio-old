@@ -149,7 +149,6 @@ h5 {
     font-weight: 900;
     font-family: 'Crimson Text', serif;
 }
-
 .btns {
     display: flex;
     justify-content: center;
@@ -165,13 +164,11 @@ h5 {
     border-radius: 10px;
     width: 5%;
     margin: 34px 2% 2% 2%;
-    text-align: left;
+    text-align: center;
     padding: 10px 30px;
     box-shadow:
         -5px -5px 4px rgba(0, 0, 0, 0.7),
         5px 5px 4px rgba(255, 255, 255, 0.3);
-    transition: box-shadow 0.5s;
-
     /* Hover effect */
     &:hover {
         box-shadow:
@@ -180,9 +177,6 @@ h5 {
     }
 }
 
-.qualifications {
-    height: clamp(350px, 90vh, 650px);
-}
 
 .contact h5,
 .projects h5 {
@@ -201,13 +195,22 @@ h5 {
 .projects h5 {
     margin-top: 9%;
 }
-
+.qualifications span li{
+    font-size: 18px !important; 
+}
 .qualifications div {
     width: 38%;
+    overflow: hidden;
 }
 
-.qualifications p {
-    font-size: 17px;
+.qualifications ul li {
+    font-size: 15px;
+    letter-spacing: 2px;
+    list-style-position: inside;
+}
+.qualifications ul {
+    list-style: none;
+    margin-left: 2%;
 }
 
 .projects {
@@ -324,14 +327,13 @@ form button:hover {
 
 .footer {
     position: relative;
-    color: #888888;
+    color: gray;
     font-weight: 900;
-    font-family: 'Inconsolata', monospace;
-    letter-spacing: 2px;
+    font-size: 11px;
 }
 
 .footer a {
-    color: #5858F6;
+    color: #5858F6; 
     text-decoration: none;
 }
 
@@ -344,14 +346,28 @@ form button:hover {
     padding: 10px;
     text-align: left;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
 }
 
-@media only screen and (max-width: 767px){
-    .profile div::before{
+@media only screen and (max-width: 767px) {
+    .profile div::before {
         opacity: 1;
     }
 }
 
+#topBtn {
+    box-shadow:
+        4px 4px 10px rgba(0, 0, 0, 0.7),
+        -4px -4px 10px rgba(255, 255, 255, 0.2);
+}
+
+#topBtn:hover {
+    box-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.7),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+    background-color: #444;
+}
+#topBtn:hover span{
+    color: white;
+}

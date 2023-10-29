@@ -1,49 +1,103 @@
-
 /* responsive */
 @media only screen and (max-width: 767px) {
-    h2{
+    h2 {
         width: 90%;
     }
-    h6{
+
+    h6 {
         width: 80%;
     }
+
     .profile {
         flex-direction: column;
         margin: auto;
     }
-    .profile div{
+
+    .profile div {
         width: 90%;
     }
+
     .more-btn,
-    .contact-btn{
+    .contact-btn {
         display: none;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         width: 90% !important;
         text-align: center;
     }
-    form{
+
+    form {
         width: 80%;
     }
-    .line{
+
+    .line {
         margin-top: 15%;
     }
 
+    #topBtn {
+        bottom: 10px !important;
+        right: 15px !important;
+    }
+
+    .qualifications div {
+        height: auto;
+    }
+    #dark-mode-button {
+        transform: rotate(-5deg) !important;
+        top: 0.2% !important;
+    }
+    .copyright{
+        flex-direction: column;
+    }
 }
 
 /* dark mode btn */
 #dark-mode-button {
-    position: fixed;
-    right: 2%; 
-    top: -2.4%; 
+    position: absolute;
+    right: 2%;
+    top: 0.7%;
     z-index: 100;
     cursor: pointer;
     background: transparent;
     border: none;
+    height: 0;
+    font-size: 25px;
 }
-#dark-mode-button svg{
-    width: 30px;
 
+#dark-mode-button img {
+    width: 25px;
+}
+
+
+/* back to top button */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 99;
+    border: 0px solid black;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.2s, background-color 0.2s, color 0.2s;
+}
+
+#topBtn .rotate-icon {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    color: black;
 }

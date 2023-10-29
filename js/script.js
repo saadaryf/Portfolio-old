@@ -27,20 +27,18 @@ contactBtn.addEventListener("click", () => {
 //switching dark mode
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById("dark-mode-button");
-    const themeStyle = document.getElementById("theme-style");
-    const darkThemeStyle = document.getElementById("dark-theme-style");
-
+    const themeLink = document.getElementById('theme-stylesheet');
     // Check for the initial state (e.g., based on user preferences or a cookie)
     let isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
 
     // Function to toggle dark mode
     function toggleDarkMode() {
         if (isDarkModeEnabled) {
-            themeStyle.removeAttribute("disabled");
-            darkThemeStyle.setAttribute("disabled", "disabled");
+            themeLink.href = "/css/style.css";
+            darkModeButton.querySelector("img").src = "/img/night-mode.png";
         } else {
-            themeStyle.setAttribute("disabled", "disabled");
-            darkThemeStyle.removeAttribute("disabled");
+            themeLink.href = "/css/dark_style.css";
+            darkModeButton.querySelector("img").src = "/img/day-mode.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 
@@ -56,3 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleDarkMode();
     }
 });
+
+
+//back to top btn
+let mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 200px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
