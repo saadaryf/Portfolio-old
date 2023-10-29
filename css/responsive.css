@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 /* responsive */
 @media only screen and (max-width: 767px) {
     h2 {
@@ -52,7 +55,17 @@
     .copyright{
         flex-direction: column;
     }
+    .services{
+        width: 98%;
+    }
 }
+
+@media only screen and (min-width: 750px){
+    .statistics div{
+        margin-left: 35px;
+    }
+}
+    
 
 /* dark mode btn */
 #dark-mode-button {

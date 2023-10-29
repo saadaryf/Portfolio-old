@@ -75,3 +75,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+// switching content of services box
+document.getElementById('first-button').addEventListener('click', function() {
+    document.querySelector('.content').innerHTML = '<p>Content about First.</p>';
+});
+
+document.getElementById('second-button').addEventListener('click', function() {
+    document.querySelector('.content').innerHTML = '<p>Content about Second.</p>';
+});
+
+document.getElementById('third-button').addEventListener('click', function() {
+    document.querySelector('.content').innerHTML = '<p>Content about Third.</p>';
+});

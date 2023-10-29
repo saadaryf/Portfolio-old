@@ -6,7 +6,6 @@
    -> personal text = font-family: 'Pacifico', cursive;
    -> common text = font-family: 'Roboto', sans-serif;
  */
-
 * {
     padding: 0;
     margin: 0;
@@ -149,6 +148,7 @@ h5 {
     font-weight: 900;
     font-family: 'Crimson Text', serif;
 }
+
 .btns {
     display: flex;
     justify-content: center;
@@ -169,6 +169,7 @@ h5 {
     box-shadow:
         -5px -5px 4px rgba(0, 0, 0, 0.7),
         5px 5px 4px rgba(255, 255, 255, 0.3);
+
     /* Hover effect */
     &:hover {
         box-shadow:
@@ -178,26 +179,39 @@ h5 {
 }
 
 
+.statistics h5,
 .contact h5,
 .projects h5 {
     font-size: 35px;
 }
 
+.qualifications {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.qualifications span li {
+    font-size: 18px !important;
+}
+
+.services h5,
 .qualifications h5 {
     font-size: 24px;
 }
 
 .contact h5 {
-    margin-top: 7%;
-    margin-bottom: 3%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .projects h5 {
-    margin-top: 9%;
+    margin-top: 70px;
 }
-.qualifications span li{
-    font-size: 18px !important; 
+
+.qualifications span li {
+    font-size: 18px !important;
 }
+
 .qualifications div {
     width: 38%;
     overflow: hidden;
@@ -208,13 +222,15 @@ h5 {
     letter-spacing: 2px;
     list-style-position: inside;
 }
+
 .qualifications ul {
     list-style: none;
     margin-left: 2%;
 }
 
 .projects {
-    margin-top: 7%;
+    margin-top: 50px;
+    margin-bottom: 200px;
     width: 100% !important;
     height: 130%;
 }
@@ -228,7 +244,7 @@ h5 {
     display: grid;
     width: 80% !important;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 25px;
@@ -267,6 +283,156 @@ h5 {
     cursor: not-allowed;
     color: gray !important;
 }
+
+.services {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+.options {
+    position: relative;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.options button:nth-child(3) {
+    border-top-right-radius: 10px;
+}
+
+.options button {
+    color: #fff;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    width: 34%;
+    background-color: #111;
+    position: relative;
+    transition: all 0.2s ease;
+    box-shadow:
+        -5px -5px 10px rgba(0, 0, 0, 0.7),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options button:hover {
+    transform: scale(0.98);
+    box-shadow:
+        -3px -3px 6px rgba(0, 0, 0, 0.7),
+        3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options button:focus {
+    transform: scale(0.98);
+    box-shadow:
+        inset 0px -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    background-color: #111;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow:
+        -5px -5px 10px rgba(0, 0, 0, 0.7),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+.statistics {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 170px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    background: rgb(36, 36, 36);
+    border-radius: 20px;
+    box-shadow:
+        -10px -10px 20px rgba(0, 0, 0, 0.3),
+        10px 10px 20px rgba(255, 255, 255, 0.1) inset;
+    transform: perspective(100px) rotateX(5deg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center !important;
+}
+
+.statistics div {
+    position: relative;
+    position: relative;
+    gap: 7vw;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    width: 97%;
+}
+
+.statistics a {
+    font-family: 'Crimson Text', serif;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    width: 110px;
+    height: 80px;
+    transition: all 0.2s ease;
+    box-shadow:
+        -5px -5px 10px rgba(0, 0, 0, 0.5),
+        /* Dark shadow color */
+        5px 5px 10px rgba(255, 255, 255, 0.2);
+
+    /* Light shadow color */
+    &:hover {
+        transform: scale(1.01);
+        box-shadow:
+            -10px -10px 20px rgba(0, 0, 0, 0.5),
+            /* Dark shadow color on hover */
+            10px 10px 20px rgba(255, 255, 255, 0.2);
+        /* Light shadow color on hover */
+    }
+}
+
+.statistics a h6 {
+    font-size: 11px;
+    font-weight: 900;
+    margin: 0;
+    color: #fff;
+}
+
+
+
 
 .contact {
     position: relative;
@@ -319,10 +485,11 @@ form button:hover {
 
 .line {
     position: relative;
-    width: 100%;
+    width: 98%;
     height: 1px;
-    background: #ffffff;
-    margin-top: 5%;
+    background: gray;
+    margin: auto;
+    margin-top: 85px;
 }
 
 .footer {
@@ -333,7 +500,7 @@ form button:hover {
 }
 
 .footer a {
-    color: #5858F6; 
+    color: #5858F6;
     text-decoration: none;
 }
 
@@ -362,12 +529,15 @@ form button:hover {
         -4px -4px 10px rgba(255, 255, 255, 0.2);
 }
 
-#topBtn:hover {
-    box-shadow:
-        2px 2px 5px rgba(0, 0, 0, 0.7),
-        -2px -2px 5px rgba(255, 255, 255, 0.2);
-    background-color: #444;
-}
-#topBtn:hover span{
-    color: white;
+@media only screen and (min-width: 750px) {
+    #topBtn:hover {
+        box-shadow:
+            2px 2px 5px rgba(0, 0, 0, 0.7),
+            -2px -2px 5px rgba(255, 255, 255, 0.2);
+        background-color: #444;
+    }
+
+    #topBtn:hover span {
+        color: white;
+    }
 }
