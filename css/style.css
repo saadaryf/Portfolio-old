@@ -326,6 +326,10 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     border-top-right-radius: 10px;
 }
 .options button {
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: black;
     border: 0px;
     outline: none;
     cursor: pointer;
@@ -340,6 +344,11 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
         transform: scale(0.98);
         box-shadow:
             inset 0px -10px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+@media only screen and (min-width: 750px) {
+    .options button:hover {
+        text-decoration: underline;
     }
 }
 .content h5{

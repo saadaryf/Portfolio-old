@@ -322,6 +322,9 @@ h5 {
 }
 
 .options button {
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+    text-transform: uppercase;
     color: #fff;
     border: 0px;
     outline: none;
