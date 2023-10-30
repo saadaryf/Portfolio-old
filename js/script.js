@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to toggle dark mode
     function toggleDarkMode() {
         if (isDarkModeEnabled) {
-            themeLink.href = "/css/style.css";
-            darkModeButton.querySelector("img").src = "/img/night-mode.png";
+            themeLink.href = "css/style.css";
+            darkModeButton.querySelector("img").src = "img/night-mode.png";
         } else {
-            themeLink.href = "/css/dark_style.css";
-            darkModeButton.querySelector("img").src = "/img/day-mode.png";
+            themeLink.href = "css/dark_style.css";
+            darkModeButton.querySelector("img").src = "img/day-mode.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 
