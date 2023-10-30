@@ -204,7 +204,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     font-size: 18px !important;
 }
 
-.services h5,
+#service-heading,
 .qualifications h5 {
     font-size: 24px;
 }
@@ -236,7 +236,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
 .projects {
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     width: 100% !important;
     height: 130%;
 
@@ -311,6 +311,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-radius: 10px;
+    border: 2px solid red;
 }
 
 .options {
@@ -342,11 +343,15 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             inset 0px -10px 10px rgba(0, 0, 0, 0.1);
     }
 }
-
+.content h5{
+    text-align: left !important;
+    margin-left: 10%;
+    margin-top: 2%;
+}
 .content {
     position: relative;
     height: 100%;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -355,7 +360,17 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
         -5px -5px 10px rgba(255, 255, 255, 0.7),
         5px 5px 10px rgba(0, 0, 0, 0.1);
 }
-
+@media only screen and (max-width: 767px) {
+    .options button:hover {
+        transform: scale(0.98);
+        box-shadow:
+            inset 0px -10px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+.content ul{
+    list-style: none;
+    margin-left: 10%;
+}
 
 
 
@@ -372,7 +387,6 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     box-shadow:
         -10px -10px 20px rgba(255, 255, 255, 0.3),
         10px 10px 20px rgba(0, 0, 0, 0.3) inset;
-    transform: perspective(100px) rotateX(5deg);
     border: 1px solid rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: center !important;
@@ -389,6 +403,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .statistics a {
+    border-radius: 10px;
     font-family: 'Crimson Text', serif;
     line-height: 22px;
     text-transform: uppercase;

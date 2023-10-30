@@ -60,32 +60,78 @@ document.addEventListener("DOMContentLoaded", function () {
 let mybutton = document.getElementById("topBtn");
 
 // When the user scrolls down 200px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 
 // switching content of services box
-document.getElementById('first-button').addEventListener('click', function() {
-    document.querySelector('.content').innerHTML = '<p>Content about First.</p>';
+document.getElementById('first-button').addEventListener('click', function () {
+    document.querySelector('.content').innerHTML = `
+    <h5>Skills and Technologies</h5>
+    <ul>
+        <br>
+        <li>Html, CSS</li>
+        <li>Javascript</li><br>
+    </ul>
+    <h5>Key Features</h5>
+    <ul>
+        <br>
+        <li>User Friendly</li>
+        <li>Responsiveness</li><br>
+    </ul>
+`;
+
 });
 
-document.getElementById('second-button').addEventListener('click', function() {
-    document.querySelector('.content').innerHTML = '<p>Content about Second.</p>';
+document.getElementById('second-button').addEventListener('click', function () {
+    document.querySelector('.content').innerHTML = `
+    <h5>Programming Languages</h5>
+    <ul>
+        <br>
+        <li>Java (Spring Boot)</li>
+        <li>MySQL</li><br>
+    </ul>
+    <h5>Key Features</h5>
+    <ul>
+        <br>
+        <li>API Development</li>
+        <li>JPA Hibernate</li>
+        <li>Spring Security</li><br>
+    </ul>
+`;
+
 });
 
-document.getElementById('third-button').addEventListener('click', function() {
-    document.querySelector('.content').innerHTML = '<p>Content about Third.</p>';
+document.getElementById('third-button').addEventListener('click', function () {
+    document.querySelector('.content').innerHTML = `
+    <h5>Skills and Technologies</h5>
+    <ul>
+        <br>
+        <li>Html, CSS</li>
+        <li>Javascript</li>
+        <li>Java (Spring Boot)</li>
+        <li>MySQL</li><br>
+    </ul>
+    <h5>Key Features</h5>
+    <ul>
+        <br>
+        <li>End-to-End Development</li>
+        <li>Database Integration</li>
+        <li>Testing and Debugging</li><br>
+    </ul>
+`;
+
 });
