@@ -7,18 +7,44 @@
     <title>SaadArif</title>
     <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/loading-site.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- loading site -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>    
+     <!-- ham -->
+     <div class="hamburger">
+        <a class="ham-lines" href="#ham">
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+        </a>
+    </div>
+     <!-- menu -->
+     <header>
+        <nav>
+            <ul>
+                <li><button class="menu-buttons" id="dark-mode-button" title="switch-theme"><img
+                            src="img/night-mode.png" alt=""></button>
+                </li>
+                <li><a href="https://drive.google.com/u/2/uc?id=1zMRapfVY3fp_4mGPKHeDVQGqddhhEuGE&export=download"
+                        class="menu-buttons" id="cv-button" title="download-cv" target="_blank"><img src="img/cv-dark.png"
+                            alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <!-- back to top btn -->
         <button onclick="topFunction()" id="topBtn" title="Go to top">
             <span class="rotate-icon">➦</span>
         </button>
+        <!-- main class -->
         <div class="main">
-            <!-- dark mode switch -->
-            <button id="dark-mode-button" title="switch-theme"><img src="img/night-mode.png" alt=""></button>
             <h4>Hi, </h4>
             <h2>I'm Saad Arif</h2>
             <h6>Full Stack Developer</h6>

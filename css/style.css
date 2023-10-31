@@ -18,12 +18,66 @@ body {
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
 }
+.ham-line{
+    width: 25px;
+    background-color: #000;
+    height: 1px !important;
+    margin: 7px 1px;
+    margin-left: 3px;
+    transition: 0.2s ease-in-out;
+    z-index: 99;
+}
+.hamburger {
+    display: none;
+    position: fixed;
+    width: 30px;
+    margin-top: 1%;
+    margin-right: 2%;
+    right: 5px;
+    z-index: 100;
+    border-radius: 5px; 
+    text-align: center;
+}
+
+/* changing ham lines to cross when .open class is added */
+.hamburger.open .ham-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open .ham-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .ham-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+header {
+    position: fixed;
+    width: 55px;
+    height: 150px;
+    margin-right: 2%;
+    right: 5px;
+    z-index: 100;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header ul li{
+    margin-top: 20px;
+}
+
 
 .main {
-    position: absolute;
+    position: relative;
     width: 95%;
     height: auto;
-    top: 7%;
+    margin-top: 3%;
     left: 50%;
     transform: translate(-50%);
     border-radius: 10px;
@@ -31,7 +85,6 @@ body {
         0px 7px 20px 0px #c0c0c0,
         -7px -7px 20px 0px #ffffff inset;
     overflow-y: auto;
-
 }
 
 h4 {
@@ -182,6 +235,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
     /* Hover effect */
     &:hover {
+        font-size: 65%;
         box-shadow:
             inset 0px 1px 10px rgba(255, 255, 255, 0.7),
             inset 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -339,16 +393,12 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     transition: all 0.2s ease;
     box-shadow:
         -5px -5px 10px rgba(255, 255, 255, 0.7),
-        5px 5px 10px rgba(0, 0, 0, 0.1);
+        5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset 0px -10px 10px rgba(0, 0, 0, 0.1);
     &:focus {
-        transform: scale(0.98);
+        transform: scale(1.02);
         box-shadow:
-            inset 0px -10px 10px rgba(0, 0, 0, 0.1);
-    }
-}
-@media only screen and (min-width: 750px) {
-    .options button:hover {
-        text-decoration: underline;
+            inset 0px -10px 10px rgba(0, 0, 0, 0);
     }
 }
 .content h5{
@@ -370,9 +420,9 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 @media only screen and (max-width: 767px) {
     .options button:hover {
-        transform: scale(0.98);
+        transform: scale(1.05);
         box-shadow:
-            inset 0px -10px 10px rgba(0, 0, 0, 0.1);
+            inset 0px -10px 10px rgba(0, 0, 0, 0);
     }
 }
 .content ul{
@@ -409,6 +459,17 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     overflow-x: auto;
     width: 97%;
 }
+
+/* Hide the scrollbar for different browsers */
+.statistics div::-webkit-scrollbar {
+    width: 0;
+}
+
+.statistics div {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
 
 .statistics a {
     border-radius: 10px;

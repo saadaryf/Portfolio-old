@@ -1,3 +1,9 @@
+// hide loading after opening site
+window.onload = function() {
+    document.querySelector('.loading-container').style.display = 'none';
+}
+
+
 // more buttom scrolloing down
 const moreBtn = document.querySelector(".more-btn");
 moreBtn.addEventListener("click", () => {
@@ -27,6 +33,7 @@ contactBtn.addEventListener("click", () => {
 //switching dark mode
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById("dark-mode-button");
+    const cvBtn = document.getElementById('cv-button');
     const themeLink = document.getElementById('theme-stylesheet');
     // Check for the initial state (e.g., based on user preferences or a cookie)
     let isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
@@ -36,9 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isDarkModeEnabled) {
             themeLink.href = "css/style.css";
             darkModeButton.querySelector("img").src = "img/night-mode.png";
+            cvBtn.querySelector("img").src = "img/cv-dark.png";
         } else {
             themeLink.href = "css/dark_style.css";
             darkModeButton.querySelector("img").src = "img/day-mode.png";
+            cvBtn.querySelector("img").src = "img/cv-light.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 
@@ -54,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleDarkMode();
     }
 });
-
 
 //back to top btn
 let mybutton = document.getElementById("topBtn");
@@ -135,3 +143,22 @@ document.getElementById('third-button').addEventListener('click', function () {
 `;
 
 });
+
+
+// toogle hamburger lines to make a cross
+const hamburger = document.querySelector('.hamburger');
+const header = document.querySelector('header ul');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+
+    // showing and hiding menu/header ul
+    if ((hamburger.classList.contains('open'))) {
+        header.style.opacity = 1;
+        header.style.pointerEvents = 'auto';
+    }else{
+        header.style.opacity = 0;
+        header.style.pointerEvents = 'none';
+    }
+});
+

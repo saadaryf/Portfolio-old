@@ -4,8 +4,23 @@ html {
 
 /* responsive */
 @media only screen and (max-width: 767px) {
+    .hamburger{
+        display: block;
+        left: 18px;
+    }
+    header{
+        margin-top: 35px;
+        margin-right: 1.5%;
+        left: 6px;
+    }
+    header ul {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease, height 0.1s ease-in-out;
+    }
     h2 {
         width: 90%;
+        font-size: 40px;
     }
 
     h6 {
@@ -72,8 +87,8 @@ html {
         margin-top: 150px;
     }
     #topBtn .rotate-icon {
-        font-size: 32px !important;
-        right: 7px !important;
+        font-size: 26px !important;
+        right: 5px !important;
     }
 }
 
@@ -89,8 +104,8 @@ html {
 
 
 /* dark mode btn */
-#dark-mode-button {
-    position: absolute;
+.menu-buttons {
+    position: relative;
     right: 2%;
     top: 0.7%;
     z-index: 100;
@@ -101,7 +116,7 @@ html {
     font-size: 25px;
 }
 
-#dark-mode-button img {
+.menu-buttons img {
     width: 25px;
 }
 
@@ -128,7 +143,8 @@ html {
     height: 30px;
     bottom: 0px;
     right: 0px;
-    font-size: 18px;
+    font-size: 20px;
+    margin-right: 2px;
     outline: none;
     border: 0px;
     display: inline-block;

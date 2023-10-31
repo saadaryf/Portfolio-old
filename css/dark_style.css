@@ -19,11 +19,78 @@ body {
     color: #ffffff;
 }
 
+.ham-line{
+    width: 25px;
+    background-color: #fff;
+    height: 1px !important;
+    margin: 7px 1px;
+    margin-left: 3px;
+    transition: 0.2s ease-in-out;
+    z-index: 99;
+}
+.hamburger {
+    display: none;
+    position: fixed;
+    width: 30px;
+    height: 30px; /* Adding a height for better visual appearance */
+    margin-top: 1%;
+    margin-right: 2%;
+    right: 5px;
+    z-index: 100;
+    border-radius: 5px; /* Make it round for neumorphism effect */
+    background-color: #333; /* Background color for the button in a dark theme */
+    text-align: center;
+    box-shadow:
+        6px 6px 12px rgba(0, 0, 0, 0.2),
+        -6px -6px 12px rgba(255, 255, 255, 0.05);
+    transition: box-shadow 0.3s ease; /* Add a transition for box-shadow */
+}
+
+.hamburger:hover {
+    box-shadow:
+        6px 6px 12px rgba(0, 0, 0, 0.4),
+        -6px -6px 12px rgba(255, 255, 255, 0.1);
+}
+
+
+/* changing ham lines to cross when .open class is added */
+.hamburger.open .ham-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open .ham-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .ham-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+header {
+    position: fixed;
+    width: 55px;
+    height: 150px;
+    margin-right: 2%;
+    right: 5px;
+    z-index: 100;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header ul li{
+    margin-top: 20px;
+}
+
 .main {
-    position: absolute;
+    position: relative;
     width: 95%;
     height: auto;
-    top: 7%;
+    margin-top: 3%;
     left: 50%;
     transform: translate(-50%);
     border-radius: 10px;
@@ -172,6 +239,7 @@ h5 {
 
     /* Hover effect */
     &:hover {
+        font-size: 65%;
         box-shadow:
             inset 0px 1px 10px rgba(0, 0, 0, 0.7),
             inset 1px 1px 3px rgba(255, 255, 255, 0.3);
@@ -408,6 +476,16 @@ h5 {
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     width: 97%;
+}
+
+/* Hide the scrollbar for different browsers */
+.statistics div::-webkit-scrollbar {
+    width: 0;
+}
+
+.statistics div {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
 
 .statistics a {
