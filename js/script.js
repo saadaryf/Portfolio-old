@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isDarkModeEnabled) {
             themeLink.href = "css/style.css";
             darkModeButton.querySelector("img").src = "img/night-mode.png";
-            cvBtn.querySelector("img").src = "img/cv-dark.png";
+            cvBtn.querySelector("img").src = "img/cv-dark.PNG";
         } else {
             themeLink.href = "css/dark_style.css";
             darkModeButton.querySelector("img").src = "img/day-mode.png";
-            cvBtn.querySelector("img").src = "img/cv-light.png";
+            cvBtn.querySelector("img").src = "img/cv-light.PNG";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 
