@@ -55,7 +55,7 @@ body {
 
 /* changing ham lines to cross when .open class is added */
 .hamburger.open .ham-line:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(-45deg);
 }
 
 .hamburger.open .ham-line:nth-child(2) {
@@ -63,7 +63,7 @@ body {
 }
 
 .hamburger.open .ham-line:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(45deg);
 }
 
 header {
@@ -85,7 +85,9 @@ header ul {
 header ul li{
     margin-top: 20px;
 }
-
+header ul li:nth-child(2){
+    margin-left: 5px;
+}
 .main {
     position: relative;
     width: 95%;
