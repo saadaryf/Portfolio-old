@@ -153,9 +153,10 @@ document.getElementById('hire-me-button').addEventListener('click', function () 
     <ul>
         <br>
         <li>I'm open to new opportunities and eager to discuss potential collaborations.</li>
-        <li>You can Contact me at given below or leave a message in the contact form.</li><br>
-        <li>saadaryf@gmail.com</li>
-        <li>+92 324 6126501</li><br>
+        <li>You can reach me at:</li><br>
+        <li><b>saadaryf@gmail.com</b></li>
+        <li><b>+92 324 2037312</b></li><br>
+        <li>Or leave a message in the contact form.</li><br>
         <li>I'm genuinely excited to hear from you and explore how I can make a meaningful contribution. I'm ready to get started!</li>
 
     </ul>
