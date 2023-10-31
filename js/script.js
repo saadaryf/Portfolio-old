@@ -32,25 +32,37 @@ contactBtn.addEventListener("click", () => {
 
 //switching dark mode
 document.addEventListener("DOMContentLoaded", function () {
+    const themeLink = document.getElementById('theme-stylesheet');
+
     const darkModeButton = document.getElementById("dark-mode-button");
     const cvBtn = document.getElementById('cv-button');
     const projectBtn = document.getElementById('project-button');
-    const themeLink = document.getElementById('theme-stylesheet');
+    const linkedinBtn= document.getElementById('linkedin-button');
+    const githubBtn= document.getElementById('github-button');
+    const instaBtn= document.getElementById('insta-button');
     // Check for the initial state (e.g., based on user preferences or a cookie)
     let isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
 
-    // Function to toggle dark mode
+    // Function to toggle dark mode & changing menu icon/button with theme
     function toggleDarkMode() {
         if (isDarkModeEnabled) {
             themeLink.href = "css/style.css";
+
             darkModeButton.querySelector("img").src = "img/night-mode.png";
             cvBtn.querySelector("img").src = "img/cv-dark.PNG";
             projectBtn.querySelector("img").src = "img/project-dark.png";
+            linkedinBtn.querySelector("img").src = "img/linkedin-dark.png";
+            githubBtn.querySelector("img").src = "img/github-dark.png";
+            instaBtn.querySelector("img").src = "img/instagram-dark.png";
         } else {
             themeLink.href = "css/dark_style.css";
+
             darkModeButton.querySelector("img").src = "img/day-mode.png";
             cvBtn.querySelector("img").src = "img/cv-light.PNG";
             projectBtn.querySelector("img").src = "img/project-light.png";
+            linkedinBtn.querySelector("img").src = "img/linkedin-light.png";
+            githubBtn.querySelector("img").src = "img/github-light.png";
+            instaBtn.querySelector("img").src = "img/instagram-light.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 

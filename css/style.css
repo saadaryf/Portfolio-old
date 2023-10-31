@@ -571,6 +571,7 @@ form button {
     text-transform: uppercase;
     margin-top: 15px;
     color: white;
+    text-align: center;
 }
 
 form button:hover {
