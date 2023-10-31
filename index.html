@@ -15,25 +15,28 @@
     <!-- loading site -->
     <div class="loading-container">
         <div class="loader"></div>
-    </div>    
-     <!-- ham -->
-     <div class="hamburger">
+    </div>
+    <!-- ham -->
+    <div class="hamburger">
         <a class="ham-lines" href="#ham">
             <div class="ham-line"></div>
             <div class="ham-line"></div>
             <div class="ham-line"></div>
         </a>
     </div>
-     <!-- menu -->
-     <header>
+    <!-- menu -->
+    <header>
         <nav>
             <ul>
                 <li><button class="menu-buttons" id="dark-mode-button" title="switch-theme"><img
-                            src="img/night-mode.png" alt=""></button>
+                            src="img/night-mode.png" alt="Theme"></button>
                 </li>
                 <li><a href="https://drive.google.com/u/2/uc?id=1zMRapfVY3fp_4mGPKHeDVQGqddhhEuGE&export=download"
-                        class="menu-buttons" id="cv-button" title="download-cv" target="_blank"><img src="img/cv-dark.PNG"
-                            alt=""></a>
+                        class="menu-buttons" id="cv-button" title="download-cv" target="_blank"><img
+                            src="img/cv-dark.PNG" alt="CV"></a>
+                </li>
+                <li><a class="menu-buttons" id="project-button" href="#projects"><img src="img/project-dark.png"
+                            alt="Project" title="view-projects"></a>
                 </li>
             </ul>
         </nav>
@@ -54,7 +57,7 @@
                     <p><span>Name: <br></span>Muhammad Saad Arif Dhillon</p>
                     <p><span>Birth Date: <br></span>December 31, 2002</p>
                     <p><span>Occupation: <br></span>Student</p>
-                    <p><span>Location: <br></span>Lahore</p>
+                    <p><span>Location: <br></span>Architects Engineers Housing Society, Lahore, Pakistan</p>
                     <p><span>Email: <br></span>saadaryf@gmail.com</p>
                 </div>
                 <div>
@@ -119,7 +122,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="projects">
+            <div id="projects" class="projects">
                 <h5>Projects</h5>
                 <div class="grid">
                     <a class="disabled-link">Coming Soon..</a>
@@ -135,9 +138,10 @@
                 <h5 id="service-heading">Services</h5>
                 <div class="container">
                     <div class="options">
-                        <button class="option-button" id="first-button">Front-End</button>
-                        <button class="option-button" id="second-button">Back-End</button>
-                        <button class="option-button" id="third-button">Full-Stack</button>
+                        <button class="option-button" id="front-end-button">Front-End</button>
+                        <button class="option-button" id="back-end-button">Back-End</button>
+                        <button class="option-button" id="full-stack-button">Full-Stack</button>
+                        <button class="option-button" id="hire-me-button">Hire-Me</button>
                     </div>
                     <div class="content">
                         <p>
@@ -175,11 +179,11 @@
             </div>
             <div class="contact">
                 <h5>Contact</h5>
-                <form action="#">
+                <form action="https://formspree.io/f/xwkdypyn" method="POST">
                     <input type="text" name="name" placeholder="Name" required /><br />
                     <input type="email" name="email" placeholder="Email" /><br />
                     <input type="text" name="subject" placeholder="Subject" required /><br />
-                    <textarea name="textarea" cols="20" rows="3" placeholder="Message"></textarea><br />
+                    <textarea name="message" cols="20" rows="3" placeholder="Message"></textarea><br />
                     <button type="submit">Send Message</button>
                 </form>
                 <div class="line"></div>
@@ -203,7 +207,7 @@
                             </p>
                         </div>
                         <div class="credit">
-                            <p>Click <a href="#">here</a> to see all credits.</p><br>
+                            <p>Click <a href="https://www.flaticon.com/">here</a> to see all credits.</p><br>
                         </div>
                     </div>
                 </div>

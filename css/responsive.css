@@ -77,7 +77,9 @@ html {
     .services {
         width: 98%;
     }
-
+    .container{
+        width: 95%;
+    }
     .statistics div {
         transform: perspective(100px) rotateX(5deg);
     }

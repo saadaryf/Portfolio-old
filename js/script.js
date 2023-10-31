@@ -1,5 +1,5 @@
 // hide loading after opening site
-window.onload = function() {
+window.onload = function () {
     document.querySelector('.loading-container').style.display = 'none';
 }
 
@@ -34,6 +34,7 @@ contactBtn.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById("dark-mode-button");
     const cvBtn = document.getElementById('cv-button');
+    const projectBtn = document.getElementById('project-button');
     const themeLink = document.getElementById('theme-stylesheet');
     // Check for the initial state (e.g., based on user preferences or a cookie)
     let isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
@@ -44,10 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
             themeLink.href = "css/style.css";
             darkModeButton.querySelector("img").src = "img/night-mode.png";
             cvBtn.querySelector("img").src = "img/cv-dark.PNG";
+            projectBtn.querySelector("img").src = "img/project-dark.png";
         } else {
             themeLink.href = "css/dark_style.css";
             darkModeButton.querySelector("img").src = "img/day-mode.png";
             cvBtn.querySelector("img").src = "img/cv-light.PNG";
+            projectBtn.querySelector("img").src = "img/project-light.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 
@@ -86,7 +89,7 @@ function topFunction() {
 
 
 // switching content of services box
-document.getElementById('first-button').addEventListener('click', function () {
+document.getElementById('front-end-button').addEventListener('click', function () {
     document.querySelector('.content').innerHTML = `
     <h5>Skills and Technologies</h5>
     <ul>
@@ -104,7 +107,7 @@ document.getElementById('first-button').addEventListener('click', function () {
 
 });
 
-document.getElementById('second-button').addEventListener('click', function () {
+document.getElementById('back-end-button').addEventListener('click', function () {
     document.querySelector('.content').innerHTML = `
     <h5>Programming Languages</h5>
     <ul>
@@ -123,7 +126,7 @@ document.getElementById('second-button').addEventListener('click', function () {
 
 });
 
-document.getElementById('third-button').addEventListener('click', function () {
+document.getElementById('full-stack-button').addEventListener('click', function () {
     document.querySelector('.content').innerHTML = `
     <h5>Skills and Technologies</h5>
     <ul>
@@ -144,6 +147,22 @@ document.getElementById('third-button').addEventListener('click', function () {
 
 });
 
+document.getElementById('hire-me-button').addEventListener('click', function () {
+    document.querySelector('.content').innerHTML = `
+    <h5>Why Hire Me</h5>
+    <ul>
+        <br>
+        <li>I'm open to new opportunities and eager to discuss potential collaborations.</li>
+        <li>You can Contact me at given below or leave a message in the contact form.</li><br>
+        <li>saadaryf@gmail.com</li>
+        <li>+92 324 6126501</li><br>
+        <li>I'm genuinely excited to hear from you and explore how I can make a meaningful contribution. I'm ready to get started!</li>
+
+    </ul>
+`;
+
+});
+
 
 // toogle hamburger lines to make a cross
 const hamburger = document.querySelector('.hamburger');
@@ -156,7 +175,7 @@ hamburger.addEventListener('click', () => {
     if ((hamburger.classList.contains('open'))) {
         header.style.opacity = 1;
         header.style.pointerEvents = 'auto';
-    }else{
+    } else {
         header.style.opacity = 0;
         header.style.pointerEvents = 'none';
     }
