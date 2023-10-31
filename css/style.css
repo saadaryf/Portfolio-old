@@ -18,7 +18,8 @@ body {
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
 }
-.ham-line{
+
+.ham-line {
     width: 25px;
     background-color: #000;
     height: 1px !important;
@@ -27,6 +28,7 @@ body {
     transition: 0.2s ease-in-out;
     z-index: 99;
 }
+
 .hamburger {
     display: none;
     position: fixed;
@@ -35,7 +37,7 @@ body {
     margin-right: 2%;
     right: 5px;
     z-index: 100;
-    border-radius: 5px; 
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -68,13 +70,16 @@ header ul {
     flex-direction: column;
     justify-content: space-between;
 }
-header ul li{
+
+header ul li {
     margin-top: 20px;
 }
-header ul li:nth-child(2){
+
+header ul li:nth-child(2) {
     margin-left: 5px;
 }
-header ul li:nth-child(3) img{
+
+header ul li:nth-child(3) img {
     width: 29px;
     margin-left: 5px;
 }
@@ -126,8 +131,8 @@ h2 {
 h6 {
     position: relative;
     top: 0.2%;
-    width: 20%;
-    font-size: 17px;
+    width: 60%;
+    font-size: 16px;
     font-weight: 550;
     text-align: center;
     margin: auto;
@@ -171,9 +176,11 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     align-items: stretch;
 }
 
+
 .profile div {
     position: relative;
     margin: 3%;
+    margin-top: 20px;
     padding: 25px 10px;
     width: clamp(200px, 23%, 300px);
     border-radius: 10px;
@@ -309,6 +316,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 .grid {
     position: relative;
     display: grid;
+    text-align: center;
     width: 80% !important;
     margin: auto;
     margin-top: 30px;
@@ -379,12 +387,15 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     display: flex;
     justify-content: space-between;
 }
-.options button:nth-child(1){
+
+.options button:nth-child(1) {
     border-top-left-radius: 10px;
 }
-.options button:nth-child(3){
+
+.options button:nth-child(3) {
     border-top-right-radius: 10px;
 }
+
 .options button {
     font-family: 'Crimson Text', serif;
     font-weight: 900;
@@ -408,11 +419,13 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             inset 0px -10px 10px rgba(0, 0, 0, 0);
     }
 }
-.content h5{
+
+.content h5 {
     text-align: left !important;
     margin-left: 10%;
     margin-top: 2%;
 }
+
 .content {
     position: relative;
     height: 100%;
@@ -425,6 +438,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
         -5px -5px 10px rgba(255, 255, 255, 0.7),
         5px 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 @media only screen and (max-width: 767px) {
     .options button:hover {
         transform: scale(1.05);
@@ -432,7 +446,8 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             inset 0px -10px 10px rgba(0, 0, 0, 0);
     }
 }
-.content ul{
+
+.content ul {
     list-style: none;
     margin-left: 10%;
 }
@@ -473,8 +488,10 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .statistics div {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer/Edge */
 }
 
 

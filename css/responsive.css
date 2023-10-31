@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* responsive */
+/* responsive mobile screens */
 @media only screen and (max-width: 767px) {
     .hamburger{
         display: block;
@@ -24,7 +24,9 @@ html {
     }
 
     h6 {
-        width: 80%;
+        width: 90%;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 
     .profile {
@@ -93,7 +95,7 @@ html {
         right: 5px !important;
     }
 }
-
+/* larger screens */
 @media only screen and (min-width: 750px) {
     .statistics div {
         margin-left: 35px;
@@ -104,6 +106,31 @@ html {
     }
 }
 
+/* tablet screens */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .profile {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* Adjust the gap as needed */
+        position: relative;
+        top: 1%;
+        height: clamp(300px, 20%, 600px);
+        width: 90%;
+        margin: auto;
+        align-items: stretch; /* Vertically center the child divs */
+        justify-items: center; /* Horizontally center the child divs */
+    }
+    .qualifications div {
+        margin-top: 100px;
+        width: 70%;
+        margin-bottom: -200px;
+    }
+    .statistics div{
+        gap: 1vw !important;
+    }
+    
+}
 
 /* dark mode btn */
 .menu-buttons {
