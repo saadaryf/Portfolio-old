@@ -82,13 +82,9 @@ html {
     .container{
         width: 95%;
     }
-    .statistics div {
-        transform: perspective(100px) rotateX(5deg);
-    }
     .statistics {
-        width: 98% !important;
-        border-radius: 0px;
         margin-top: 150px;
+        transform: perspective(100px) rotateX(5deg);
     }
     #topBtn .rotate-icon {
         font-size: 26px !important;
@@ -98,11 +94,7 @@ html {
 /* larger screens */
 @media only screen and (min-width: 750px) {
     .statistics div {
-        margin-left: 35px;
-    }
-
-    .statistics {
-        transform: perspective(100px) rotateX(5deg);
+        margin-left: 25px;
     }
 }
 
@@ -125,9 +117,6 @@ html {
         margin-top: 100px;
         width: 70%;
         margin-bottom: -200px;
-    }
-    .statistics div{
-        gap: 1vw !important;
     }
     
 }

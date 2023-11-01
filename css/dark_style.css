@@ -310,6 +310,16 @@ h5 {
     width: 100% !important;
     height: 130%;
 }
+#projects-grid img{
+    display: none;
+    width: 20px;
+    padding: 0px 3px;
+    margin-top: -2.5px;
+}
+#projects-grid a:hover img{
+    display: block;
+}
+
 
 .projects div {
     box-shadow: none;
@@ -347,7 +357,6 @@ h5 {
 
     /* Hover effect */
     &:hover {
-        color: #7979CF;
         box-shadow:
             0px 1px 10px rgba(0, 0, 0, 0.7),
             1px 1px 3px rgba(255, 255, 255, 0.3),
@@ -469,6 +478,7 @@ h5 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center !important;
+    transform: perspective(100px) rotateX(5deg);
 }
 @media only screen and (max-width: 767px) {
     .statistics{
@@ -479,7 +489,7 @@ h5 {
 }
 .statistics div {
     position: relative;
-    gap: 7vw;
+    gap: 1vw;
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -504,10 +514,10 @@ h5 {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     position: relative;
-    width: 120px;
+    width:  170px;
     height: 80px;
     transition: all 0.2s ease;
     background: #333333;
