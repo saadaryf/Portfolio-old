@@ -484,16 +484,10 @@ h5 {
     justify-content: center !important;
     transform: perspective(100px) rotateX(5deg);
 }
-@media only screen and (max-width: 767px) {
-    .statistics{
-        box-shadow:
-        -5px -5px 10px rgba(0, 0, 0, 0),
-        5px 5px 10px rgba(0, 0, 0, 0);
-    }
-}
+
 .statistics div {
     position: relative;
-    gap: 1vw;
+    gap: 4vw;
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);

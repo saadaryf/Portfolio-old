@@ -484,7 +484,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
 .statistics div {
     position: relative;
-    gap: 1vw;
+    gap: 2vw;
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
