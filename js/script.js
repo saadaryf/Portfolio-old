@@ -4,17 +4,8 @@ window.onload = function () {
 }
 
 
-// more buttom scrolloing down
-const moreBtn = document.querySelector(".more-btn");
-moreBtn.addEventListener("click", () => {
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: "smooth",
-    });
-});
-
 // contact buttom scrolling to the bottom
-const contactBtn = document.querySelector(".contact-btn")
+const contactBtn = document.getElementById("contact-btn")
 contactBtn.addEventListener("click", () => {
     const scrollHeight = Math.max(
         document.body.scrollHeight,
@@ -26,7 +17,7 @@ contactBtn.addEventListener("click", () => {
     );
     window.scrollBy({
         top: scrollHeight - window.scrollY,
-        behavior: "smooth",
+        behavior: "smooth", 
     });
 });
 
@@ -36,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const darkModeButton = document.getElementById("dark-mode-button");
     const cvBtn = document.getElementById('cv-button');
-    const projectBtn = document.getElementById('project-button');
     const linkedinBtn= document.getElementById('linkedin-button');
     const githubBtn= document.getElementById('github-button');
     const instaBtn= document.getElementById('insta-button');
@@ -50,19 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
             darkModeButton.querySelector("img").src = "img/night-mode.png";
             cvBtn.querySelector("img").src = "img/cv-dark.PNG";
-            projectBtn.querySelector("img").src = "img/project-dark.png";
             linkedinBtn.querySelector("img").src = "img/linkedin-dark.png";
             githubBtn.querySelector("img").src = "img/github-dark.png";
             instaBtn.querySelector("img").src = "img/instagram-dark.png";
+            contactBtn.querySelector("img").src = "img/contact-dark.png";
         } else {
             themeLink.href = "css/dark_style.css";
 
             darkModeButton.querySelector("img").src = "img/day-mode.png";
             cvBtn.querySelector("img").src = "img/cv-light.PNG";
-            projectBtn.querySelector("img").src = "img/project-light.png";
             linkedinBtn.querySelector("img").src = "img/linkedin-light.png";
             githubBtn.querySelector("img").src = "img/github-light.png";
             instaBtn.querySelector("img").src = "img/instagram-light.png";
+            contactBtn.querySelector("img").src = "img/contact-light.png";
         }
         isDarkModeEnabled = !isDarkModeEnabled;
 

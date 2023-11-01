@@ -88,9 +88,8 @@ header ul li{
 header ul li:nth-child(2){
     margin-left: 5px;
 }
-header ul li:nth-child(3) img{
-    width: 29px;
-    margin-left: 5px;
+header ul li:nth-child(6) img{
+    width: 30px;
 }
 
 .main {
@@ -229,9 +228,10 @@ h5 {
     justify-content: center;
 }
 
-.contact-btn,
-.more-btn {
+.menu-btn {
     text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
     font-size: 70%;
     letter-spacing: 2px;
     cursor: pointer;
@@ -305,10 +305,12 @@ h5 {
 }
 
 .projects {
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 100% !important;
+    width: 96% !important;
     height: 130%;
+    overflow-x: hidden;
 }
 #projects-grid img{
     display: none;
@@ -379,6 +381,7 @@ h5 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container {
@@ -551,6 +554,7 @@ h5 {
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 form {
@@ -560,17 +564,19 @@ form {
 }
 
 form textarea,
-form input {
+form input,
+form button {
     position: relative;
-    width: 93%;
-    color: #ffffff;
+    width: 100%;
+    color: white;
     border: none;
     border-radius: 0px;
     padding: 10px 40px 0px 0px;
     line-height: 40px;
-    border-bottom: 2px solid #888888;
+    border-bottom: 2px solid gray;
     background: transparent;
     outline: none;
+    box-sizing: border-box; 
 }
 
 form textarea:focus,
@@ -581,16 +587,17 @@ form input:focus {
 }
 
 form button {
+    position: relative;
     cursor: pointer;
-    font-size: 90%;
-    width: 100%;
-    padding: 15px 80px;
-    background: #000000;
-    border: 1px solid #000000;
+    padding: 15px 0px;
+    background: black;
     text-transform: uppercase;
     margin-top: 15px;
-    color: #ffffff;
+    color: white;
+    box-sizing: border-box; 
+    border-bottom: 0px;
 }
+
 
 form button:hover {
     background: #30302F;
