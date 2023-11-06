@@ -219,6 +219,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .profile span {
+    text-transform: uppercase;
     font-weight: 900;
     font-family: 'Crimson Text', serif;
 }

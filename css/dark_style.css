@@ -220,6 +220,7 @@ h5 {
 }
 
 .profile span {
+    text-transform: uppercase;
     font-weight: 900;
     font-family: 'Crimson Text', serif;
 }
