@@ -93,7 +93,7 @@ html {
         width: 95%;
     }
 
-    .skill-blocks {
+    .intrests {
         margin-top: 150px;
         transform: perspective(100px) rotateX(5deg);
     }
@@ -110,7 +110,7 @@ html {
 
 /* larger screens */
 @media only screen and (min-width: 750px) {
-    .skill-blocks div {
+    .intrests div {
         margin-left: 25px;
     }
 }
