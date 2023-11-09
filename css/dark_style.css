@@ -326,6 +326,8 @@ h5 {
 }
 
 #projects-grid img {
+    position: absolute;
+    top: 5%;
     display: none;
     width: 20px;
     padding: 0px 3px;
