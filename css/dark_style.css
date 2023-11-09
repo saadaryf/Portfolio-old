@@ -19,7 +19,7 @@ body {
     color: #ffffff;
 }
 
-.ham-line{
+.ham-line {
     width: 25px;
     background-color: #fff;
     height: 1px !important;
@@ -28,22 +28,27 @@ body {
     transition: 0.2s ease-in-out;
     z-index: 99;
 }
+
 .hamburger {
     display: none;
     position: fixed;
     width: 30px;
-    height: 30px; /* Adding a height for better visual appearance */
+    height: 30px;
+    /* Adding a height for better visual appearance */
     margin-top: 1%;
     margin-right: 2%;
     right: 5px;
     z-index: 100;
-    border-radius: 5px; /* Make it round for neumorphism effect */
-    background-color: #333; /* Background color for the button in a dark theme */
+    border-radius: 5px;
+    /* Make it round for neumorphism effect */
+    background-color: #333;
+    /* Background color for the button in a dark theme */
     text-align: center;
     box-shadow:
         6px 6px 12px rgba(0, 0, 0, 0.2),
         -6px -6px 12px rgba(255, 255, 255, 0.05);
-    transition: box-shadow 0.3s ease; /* Add a transition for box-shadow */
+    transition: box-shadow 0.3s ease;
+    /* Add a transition for box-shadow */
 }
 
 .hamburger:hover {
@@ -82,13 +87,16 @@ header ul {
     flex-direction: column;
     justify-content: space-between;
 }
-header ul li{
+
+header ul li {
     margin-top: 20px;
 }
-header ul li:nth-child(2){
+
+header ul li:nth-child(2) {
     margin-left: 5px;
 }
-header ul li:nth-child(6) img{
+
+header ul li:nth-child(6) img {
     width: 30px;
 }
 
@@ -257,7 +265,7 @@ h5 {
 }
 
 
-.statistics h5,
+.skill-blocks h5,
 .contact h5,
 .projects h5 {
     font-size: 35px;
@@ -314,19 +322,22 @@ h5 {
     height: 130%;
     overflow-x: hidden;
 }
-#projects-grid img{
+
+#projects-grid img {
     display: none;
     width: 20px;
     padding: 0px 3px;
     margin-top: -2.5px;
 }
-#projects-grid a:hover img{
+
+#projects-grid a:hover img {
     display: block;
 }
 
 
 .projects div {
     box-shadow: none;
+    margin-bottom: 30px;
 }
 
 .grid {
@@ -441,11 +452,13 @@ h5 {
     box-shadow:
         inset 0px -3px 6px rgba(0, 0, 0, 0.1);
 }
-.content h5{
+
+.content h5 {
     text-align: left !important;
     margin-left: 10%;
     margin-top: 2%;
 }
+
 .content {
     position: relative;
     height: 100%;
@@ -458,7 +471,8 @@ h5 {
         -5px -5px 10px rgba(0, 0, 0, 0.7),
         5px 5px 10px rgba(0, 0, 0, 0.1);
 }
-.content ul{
+
+.content ul {
     list-style: none;
     margin-left: 10%;
 }
@@ -468,7 +482,7 @@ h5 {
 
 
 
-.statistics {
+.skill-blocks {
     position: relative;
     margin: auto;
     width: 90%;
@@ -486,7 +500,7 @@ h5 {
     transform: perspective(100px) rotateX(5deg);
 }
 
-.statistics div {
+.skill-blocks div {
     position: relative;
     gap: 4vw;
     margin-top: 60px;
@@ -495,18 +509,25 @@ h5 {
     overflow-x: auto;
     width: 97%;
 }
+.skill-blocks div:hover a{
+    animation-play-state: paused;
+}
 
 /* Hide the scrollbar for different browsers */
-.statistics div::-webkit-scrollbar {
+.skill-blocks div::-webkit-scrollbar {
     width: 0;
 }
 
-.statistics div {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer/Edge */
+.skill-blocks div {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer/Edge */
 }
-
-.statistics a {
+.skill-blocks img{
+    width: 80px;
+}
+.skill-blocks a {
     border-radius: 10px;
     font-family: 'Crimson Text', serif;
     line-height: 22px;
@@ -516,7 +537,7 @@ h5 {
     align-items: center;
     justify-content: center;
     position: relative;
-    width:  170px;
+    width: 170px;
     height: 80px;
     transition: all 0.2s ease;
     background: #333333;
@@ -524,6 +545,8 @@ h5 {
         -5px -5px 10px rgba(0, 0, 0, 0.5),
         /* Dark shadow color */
         5px 5px 10px rgba(255, 255, 255, 0.2);
+    animation: slide 13s linear infinite;
+
 
     /* Light shadow color */
     &:hover {
@@ -536,7 +559,28 @@ h5 {
     }
 }
 
-.statistics a h6 {
+@keyframes slide {
+    100% {
+        transform: translateX(-82vw);
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateX(82vw);
+        opacity: 1;
+    }
+}
+
+.skill-blocks a h6 {
     font-size: 11px;
     font-weight: 900;
     margin: 0;
@@ -572,7 +616,7 @@ form button {
     border-bottom: 2px solid gray;
     background: transparent;
     outline: none;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 form textarea:focus,
@@ -590,7 +634,7 @@ form button {
     text-transform: uppercase;
     margin-top: 15px;
     color: white;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     border-bottom: 0px;
 }
 

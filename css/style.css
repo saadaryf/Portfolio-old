@@ -78,7 +78,8 @@ header ul li {
 header ul li:nth-child(2) {
     margin-left: 5px;
 }
-header ul li:nth-child(6) img{
+
+header ul li:nth-child(6) img {
     width: 30px;
 }
 
@@ -256,7 +257,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 
-.statistics h5,
+.skill-blocks h5,
 .contact h5,
 .projects h5 {
     font-size: 35px;
@@ -309,18 +310,21 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     height: 130%;
     overflow-x: hidden;
 }
-#projects-grid img{
+
+#projects-grid img {
     display: none;
     width: 20px;
     padding: 0px 3px;
     margin-top: -2.5px;
 }
-#projects-grid a:hover img{
+
+#projects-grid a:hover img {
     display: block;
 }
 
 .projects div {
     box-shadow: none;
+    margin-bottom: 30px;
 }
 
 .grid {
@@ -465,7 +469,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
 
 
-.statistics {
+.skill-blocks {
     position: relative;
     margin: auto;
     width: 90%;
@@ -483,7 +487,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     transform: perspective(100px) rotateX(5deg);
 }
 
-.statistics div {
+.skill-blocks div {
     position: relative;
     gap: 2vw;
     margin-top: 60px;
@@ -492,21 +496,26 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     overflow-x: auto;
     width: 97%;
 }
+.skill-blocks div:hover a{
+    animation-play-state: paused;
+}
 
 /* Hide the scrollbar for different browsers */
-.statistics div::-webkit-scrollbar {
+.skill-blocks div::-webkit-scrollbar {
     width: 0;
 }
 
-.statistics div {
+.skill-blocks div {
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
     /* Microsoft Edge */
 }
+.skill-blocks img{
+    width: 80px;
+}
 
-
-.statistics a {
+.skill-blocks a {
     border-radius: 10px;
     font-family: 'Crimson Text', serif;
     line-height: 22px;
@@ -516,13 +525,14 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     align-items: center;
     justify-content: center;
     position: relative;
-    width:  170px;
+    width: 170px;
     height: 80px;
     transition: all 0.2s ease;
     box-shadow:
         -5px -5px 10px rgba(255, 255, 255, 0.5),
         5px 5px 10px rgba(0, 0, 0, 0.2);
     background: #ffffffd3;
+    animation: slide 13s linear infinite;
 
     &:hover {
         transform: scale(1.01);
@@ -532,7 +542,28 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     }
 }
 
-.statistics a h6 {
+@keyframes slide {
+    100% {
+      transform: translateX(-82vw);
+      opacity: 0;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+  
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateX(82vw);
+      opacity: 1;
+    }
+  }
+
+.skill-blocks a h6 {
     font-size: 11px;
     font-weight: 900;
     margin: 0;
@@ -565,7 +596,7 @@ form button {
     border-bottom: 2px solid gray;
     background: transparent;
     outline: none;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 form textarea:focus,
@@ -583,7 +614,7 @@ form button {
     text-transform: uppercase;
     margin-top: 15px;
     color: white;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     border-bottom: 0px;
 }
 
