@@ -101,7 +101,7 @@ h4 {
     position: relative;
     top: 0.2%;
     width: 20%;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 250;
     text-align: center;
     border-radius: 10px;
@@ -114,7 +114,7 @@ h2 {
     position: relative;
     top: 0%;
     width: 50%;
-    font-size: 50px;
+    font-size: 80px;
     text-align: center;
     border-radius: 10px;
     margin: auto;
@@ -135,6 +135,7 @@ h6 {
     font-weight: 550;
     text-align: center;
     margin: auto;
+    margin-bottom: 50px;
     padding: 2px 10px;
     border-radius: 5px;
     letter-spacing: 3px;
@@ -170,7 +171,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     position: relative;
     top: 1%;
     height: clamp(300px, 20%, 600px);
-    width: 90%;
+    width: 95%;
     margin: auto;
     align-items: stretch;
 }
@@ -181,7 +182,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     margin: 3%;
     margin-top: 20px;
     padding: 25px 10px;
-    width: clamp(200px, 23%, 300px);
+    width: clamp(270px, 23%, 400px);
     border-radius: 10px;
     box-shadow:
         -6px -6px 5px rgba(255, 255, 255, 0.5),
@@ -229,7 +230,11 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     display: flex;
     justify-content: center;
 }
-
+.btns p{
+    display: block;
+    margin-top: -32px;
+    font-size: 40px;
+}
 .menu-btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -237,7 +242,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     font-size: 70%;
     letter-spacing: 2px;
     cursor: pointer;
-    display: block;
+    display: none;
     border-radius: 10px;
     width: 5%;
     margin: 34px 2% 2% 2%;
@@ -269,12 +274,13 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .qualifications span li {
-    font-size: 18px !important;
+    font-size: 15px !important;
+    margin-left: 15px;
 }
 
 #service-heading,
 .qualifications h5 {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .contact h5 {
@@ -312,6 +318,8 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 #projects-grid img {
+    position: absolute;
+    top: 5%;
     display: none;
     width: 20px;
     padding: 0px 3px;
@@ -365,7 +373,14 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             10px 10px 20px rgba(0, 0, 0, 0.2);
     }
 }
-
+.grid p{
+    padding: 10px;
+    font-size: 22px;
+}
+.grid span{
+    font-size: 12px;
+    color: gray;
+}
 .disabled-link {
     cursor: not-allowed;
     color: rgb(173, 171, 171) !important;
@@ -374,13 +389,14 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 .services {
     position: relative;
     margin: auto;
-    width: 60%;
-    height: 500px;
+    width: 80%;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .container {
@@ -393,6 +409,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .options {
@@ -438,6 +455,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     text-align: left !important;
     margin-left: 10%;
     margin-top: 2%;
+    font-size: 24px;
 }
 
 .content {
