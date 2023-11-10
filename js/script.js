@@ -149,24 +149,6 @@ document.getElementById('full-stack-button').addEventListener('click', function 
 
 });
 
-document.getElementById('hire-me-button').addEventListener('click', function () {
-    document.querySelector('.content').innerHTML = `
-    <h5>Why Hire Me</h5>
-    <ul>
-        <br>
-        <li>I'm open to new opportunities and eager to discuss potential collaborations.</li>
-        <li>You can reach me at:</li><br>
-        <li><b>saadaryf@gmail.com</b></li>
-        <li><b>+92 324 2037312</b></li><br>
-        <li>Or leave a message in the contact form.</li><br>
-        <li>I'm genuinely excited to hear from you and explore how I can make a meaningful contribution. I'm ready to get started!</li>
-
-    </ul>
-`;
-
-});
-
-
 // toogle hamburger lines to make a cross
 const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('header ul');

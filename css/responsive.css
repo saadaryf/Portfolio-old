@@ -145,7 +145,7 @@ html {
         width: 0px;
         position: absolute;
         left: 0;
-        z-index: 6;
+        z-index: 99 !important;
         display: flex;
     }
 

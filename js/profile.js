@@ -311,7 +311,7 @@ thirdOption.addEventListener('click', function () {
         `;
     } else if (firstOption.classList.contains('contact-class')) {
         actualContent.innerHTML = `
-            <p><span>LinkedIN: </span><a href="https://www.linkedin.com/in/saadaryf">saadaryf</a></p>
+            <p><span>LinkedIn: </span><a href="https://www.linkedin.com/in/saadaryf">saadaryf</a></p>
             <p><span>GitHub: </span><a href="https://github.com/saadaryf">saadaryf</a></p>
             <p><span>Insta: </span><a href="https://www.instagram.com/saadaryf">saadaryf</a></p>
         `;
@@ -324,16 +324,20 @@ const menuBtn = document.querySelector('.phone-menu-button button');
 const leftDiv = document.querySelector('.left-menu');
 const menuList = document.querySelector('.left-menu ul');
 
+let isClosed = true;
+
 menuBtn.addEventListener('click', function () {
-    if (parseInt(leftDiv.style.width) === 0) {
+    if (isClosed) {
         leftDiv.style.width = '200px';
         menuList.style.width = '200px';
         menuList.style.display = 'flex';
         menuBtn.innerText='«'; 
+        isClosed = false;
     } else {
         leftDiv.style.width = '0';
         menuList.style.width = '0';
         menuList.style.display = 'none';
         menuBtn.innerText='»'; 
+        isClosed = true;
     }
 });

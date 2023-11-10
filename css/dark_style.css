@@ -183,6 +183,7 @@ h5 {
 }
 
 .left-menu {
+    position: relative;
     height: 450px;
     width: 300px;
     background: #000;
@@ -192,7 +193,6 @@ h5 {
         15px 8px 5px 0px rgba(0, 0, 0, 0.1);
     background-color: #111;
 }
-
 .profile ul {
     position: relative;
     list-style: none;
@@ -247,7 +247,6 @@ h5 {
         6px 6px 5px rgba(0, 0, 0, 0.1);
     background-color: #111;
 }
-
 .top-menu {
     position: relative;
     height: 25%;
@@ -388,6 +387,7 @@ h5 {
     0px 6px 8px 0px rgba(255, 255, 255, 0.1); 
     color: #fff;
 }
+
 .btns {
     display: flex;
     justify-content: center;
