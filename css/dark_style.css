@@ -74,7 +74,6 @@ body {
 header {
     position: fixed;
     width: 55px;
-    height: 150px;
     margin-right: 2%;
     right: 5px;
     z-index: 100;

@@ -159,10 +159,10 @@ hamburger.addEventListener('click', () => {
     // showing and hiding menu/header ul
     if ((hamburger.classList.contains('open'))) {
         header.style.opacity = 1;
-        header.style.pointerEvents = 'auto';
+         header.style.display = 'flex';
     } else {
         header.style.opacity = 0;
-        header.style.pointerEvents = 'none';
+        header.style.display = 'none';
     }
 });
 
