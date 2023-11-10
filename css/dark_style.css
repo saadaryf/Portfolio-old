@@ -489,22 +489,16 @@ h5 {
         -5px -5px 4px rgba(0, 0, 0, 0.7),
         5px 5px 4px rgba(255, 255, 255, 0.3);
     transition: box-shadow 0.2s;
-
-    /* Hover effect */
-    &:hover {
-        box-shadow:
-            0px 1px 10px rgba(0, 0, 0, 0.7),
-            1px 1px 3px rgba(255, 255, 255, 0.3),
-            inset 0px 1px 10px rgba(0, 0, 0, 0.7),
-            inset 1px 1px 3px rgba(255, 255, 255, 0.3);
-    }
-}
-.grid p{
-    padding: 10px;
 }
 .grid span{
     font-size: 12px;
     color: gray;
+}
+.grid a:hover span{
+    color: #fff;
+}
+.grid p{
+    padding: 10px;
 }
 .disabled-link {
     cursor: not-allowed;

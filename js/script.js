@@ -167,29 +167,3 @@ hamburger.addEventListener('click', () => {
 });
 
 
-// making project boxes move with cursor
-const projectsArea = document.getElementById('projects');
-const parallaxStrength = 10;
-
-function applyParallaxEffect(e) {
-    const xOffset = (e.clientX - projectsArea.getBoundingClientRect().left) / projectsArea.offsetWidth;
-    const yOffset = (e.clientY - projectsArea.getBoundingClientRect().top) / projectsArea.offsetHeight;
-
-    const blocks = document.querySelectorAll('.grid a');
-    blocks.forEach((block) => {
-        const rotation = parallaxStrength * (xOffset - 0.5);
-        block.style.transform = `rotate(${rotation}deg)`;
-    });
-}
-function resetParallaxEffect() {
-    const blocks = document.querySelectorAll('.grid a');
-    blocks.forEach((block) => {
-        block.style.transform = 'rotate(0deg)';
-    });
-}
-if (window.innerWidth >= 960) { 
-    projectsArea.addEventListener('mouseover', applyParallaxEffect);
-    projectsArea.addEventListener('mouseleave', resetParallaxEffect);
-}
-
-

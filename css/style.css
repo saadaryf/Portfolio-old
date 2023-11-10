@@ -469,27 +469,19 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     background-color: #f0f0f0;
     border-radius: 10px;
     transition: all 0.2s;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease;
     box-shadow:
         -5px -5px 10px rgba(255, 255, 255, 0.5),
         5px 5px 10px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-        box-shadow:
-            -10px -10px 20px rgba(255, 255, 255, 0.5),
-            10px 10px 20px rgba(0, 0, 0, 0.2);
-    }
 }
-
-.grid p {
-    padding: 10px;
-    font-size: 22px;
-}
-
-.grid span {
+.grid span{
     font-size: 12px;
     color: gray;
+}
+.grid a:hover span{
+    color: #000;
+}
+.grid p{
+    padding: 10px;
 }
 
 .disabled-link {
