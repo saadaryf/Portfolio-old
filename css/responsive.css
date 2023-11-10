@@ -65,6 +65,7 @@ html {
 
     .grid a {
         font-size: 14px;
+        height: 15vh;
     }
 
     form {
@@ -79,11 +80,6 @@ html {
         bottom: 10px !important;
         right: 15px !important;
     }
-
-    .qualifications div {
-        height: auto;
-    }
-
     #dark-mode-button {
         transform: rotate(-5deg) !important;
         top: 0.2% !important;
@@ -122,11 +118,6 @@ html {
         font-size: 26px !important;
         right: 5px !important;
     }
-
-    #projects-grid img {
-        display: block;
-        width: 15px;
-    }
     .bottom-top-buttons {
         margin-left: 0px;
     }
@@ -142,7 +133,7 @@ html {
         margin-bottom: 10px;
     }
     .left-menu {
-        width: 0px;
+        width: 0;
         position: absolute;
         left: 0;
         z-index: 99 !important;
@@ -229,12 +220,6 @@ html {
         width: 60%;
     }
 
-    .qualifications div {
-        margin-top: 100px;
-        width: 70%;
-        margin-bottom: -200px;
-    }
-
     #projects-grid img {
         display: block;
     }
@@ -256,6 +241,28 @@ html {
     border: none;
     height: 0;
     font-size: 25px;
+}
+/* shake animation for button */
+.shake-animation {
+    animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(2px);
+    }
 }
 
 .menu-buttons img {

@@ -43,7 +43,7 @@ body {
 
 /* changing ham lines to cross when .open class is added */
 .hamburger.open .ham-line:nth-child(1) {
-    transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger.open .ham-line:nth-child(2) {
@@ -51,7 +51,7 @@ body {
 }
 
 .hamburger.open .ham-line:nth-child(3) {
-    transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 header {
@@ -415,18 +415,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     font-size: 35px;
 }
 
-.qualifications {
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-
-.qualifications span li {
-    font-size: 15px !important;
-    margin-left: 15px;
-}
-
-#service-heading,
-.qualifications h5 {
+#service-heading{
     font-size: 32px;
 }
 
@@ -438,23 +427,6 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 .projects h5 {
     margin-top: 70px;
 }
-
-.qualifications div {
-    width: 38%;
-    overflow: hidden;
-}
-
-.qualifications ul li {
-    font-size: 15px;
-    letter-spacing: 2px;
-    list-style-position: inside;
-}
-
-.qualifications ul {
-    list-style: none;
-    margin-left: 2%;
-}
-
 .projects {
     margin: auto;
     margin-top: 50px;
@@ -462,19 +434,6 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     width: 96% !important;
     height: 130%;
     overflow-x: hidden;
-}
-
-#projects-grid img {
-    position: absolute;
-    top: 5%;
-    display: none;
-    width: 20px;
-    padding: 0px 3px;
-    margin-top: -2.5px;
-}
-
-#projects-grid a:hover img {
-    display: block;
 }
 
 .projects div {

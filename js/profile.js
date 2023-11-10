@@ -324,7 +324,7 @@ const menuBtn = document.querySelector('.phone-menu-button button');
 const leftDiv = document.querySelector('.left-menu');
 const menuList = document.querySelector('.left-menu ul');
 
-let isClosed = true;
+let isClosed = false;
 
 menuBtn.addEventListener('click', function () {
     if (isClosed) {
@@ -341,3 +341,19 @@ menuBtn.addEventListener('click', function () {
         isClosed = true;
     }
 });
+
+function shakeMenuButton() {
+    menuBtn.classList.add('shake-animation');
+    setTimeout(() => {
+        menuBtn.classList.remove('shake-animation');
+    }, 500);
+}
+function shakeAfterTime() {
+    setInterval(shakeMenuButton, 5000); 
+}
+window.addEventListener('load', () => {
+    setTimeout(shakeMenuButton, 2000);
+    shakeAfterTime();
+});
+
+
