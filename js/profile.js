@@ -59,7 +59,24 @@ skillsBtn.addEventListener('click', function () {
     actualContent.innerHTML = `
     <p><span>Front-End</span><br>Html, CSS, JavaScript</p>
     <p><span>Back-End</span><br>C++, Java, MySQL</p>
-`;
+    `;
+    firstOptionContent.addEventListener('click', function () {
+        actualContent.innerHTML = `
+        <p><span>Front-End</span><br>Html, CSS, JavaScript</p>
+        <p><span>Back-End</span><br>C++, Java, MySQL</p>
+    `;
+    })
+    secondOptionContent.addEventListener('click', function () {
+        actualContent.innerHTML = `
+        <p><span>Relational</span><br>MySQL</p>
+    `;
+    })
+    thirdOptionContent.addEventListener('click', function () {
+        actualContent.innerHTML = `
+        <p><span>Frameworks</span><br>Spring Boot Java</p>
+    `;
+    })
+
 })
 qualificationsBtn.addEventListener('click', function () {
     firstOption.innerHTML = '<div class="menu-img"><img src="img/suitcase.png" alt=""></div><p>Experience</p>';
@@ -79,7 +96,6 @@ qualificationsBtn.addEventListener('click', function () {
     actualContent.innerHTML = `
     <p><span>Punjab Information Technology Board(PITB)</span><br>Intern<br>Spring Boot Java<br>August 2023 - September 2023</p>
     `;
-
 })
 languagesBtn.addEventListener('click', function () {
     firstOption.innerHTML = '<div class="menu-img"><img src="img/eng.png" alt=""></div><p>English</p>';
@@ -331,13 +347,13 @@ menuBtn.addEventListener('click', function () {
         leftDiv.style.width = '200px';
         menuList.style.width = '200px';
         menuList.style.display = 'flex';
-        menuBtn.innerText='«'; 
+        menuBtn.innerText = '«';
         isClosed = false;
     } else {
         leftDiv.style.width = '0';
         menuList.style.width = '0';
         menuList.style.display = 'none';
-        menuBtn.innerText='»'; 
+        menuBtn.innerText = '»';
         isClosed = true;
     }
 });
@@ -349,7 +365,7 @@ function shakeMenuButton() {
     }, 500);
 }
 function shakeAfterTime() {
-    setInterval(shakeMenuButton, 5000); 
+    setInterval(shakeMenuButton, 5000);
 }
 window.addEventListener('load', () => {
     setTimeout(shakeMenuButton, 2000);
