@@ -68,7 +68,6 @@ header ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 header ul li {
