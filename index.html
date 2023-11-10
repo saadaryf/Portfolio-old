@@ -36,13 +36,13 @@
                             src="img/cv-dark.PNG" alt="CV"></a>
                 </li>
                 <li><a class="menu-buttons" id="linkedin-button" href="https://www.linkedin.com/in/saadaryf"><img
-                            src="img/linkedin-dark.png" alt="LinkedIn" title="linkedin"  target="_blank"></a>
+                            src="img/linkedin-dark.png" alt="LinkedIn" title="linkedin" target="_blank"></a>
                 </li>
                 <li><a class="menu-buttons" id="github-button" href="https://github.com/saadaryf"><img
-                            src="img/github-dark.png" alt="GitHub" title="GitHub"  target="_blank"></a>
+                            src="img/github-dark.png" alt="GitHub" title="GitHub" target="_blank"></a>
                 </li>
                 <li><a class="menu-buttons" id="insta-button" href="https://www.instagram.com/saadaryf"><img
-                            src="img/instagram-dark.png" alt="instagram" title="instagram"  target="_blank"></a>
+                            src="img/instagram-dark.png" alt="instagram" title="instagram" target="_blank"></a>
                 </li>
                 <li><a class="menu-buttons" id="contact-btn"><img src="img/contact-dark.png" alt="contact"
                             title="contact"></a>
@@ -62,15 +62,46 @@
             <h2>I'm Saad Arif</h2>
             <h6>Software Engineer | Web Developer</h6>
             <div class="profile">
-                <div>
+                <div class="left-menu">
+                    <ul>
+                        <li><button id="about-btn">About</button></li>
+                        <li><button id="skills-btn">Skills</button></li>
+                        <li><button id="qualifications-btn">Qualifications</button></li>
+                        <li><button id="languages-btn">Languages</button></li>
+                        <li><button id="contact-menu-btn">Contact</button></li>
+                    </ul>
+                </div>
+                <div class="right-page">
+                    <div class="top-menu">
+                        <ul>
+                            <li><button class="about-class" id="first-option" ><div class="menu-img"><img src="img/user.png" alt=""></div><p>Name</p></button></li>
+                            <li><button id="second-option" ><div class="menu-img"><img src="img/age.png" alt=""></div><p>Age</p></button></li>
+                            <li><button id="third-option" ><div class="menu-img"><img src="img/location-pin.png" alt=""></div><p>Location</p></button></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-content">
+                        <div class="bottom-top-buttons">
+                            <ul>
+                                <li><button id="first-option-content" class="hide">first</button></li>
+                                <li><button id="second-option-content" class="hide">second</button></li>
+                                <li><button id="third-option-content" class="hide">third</button></li>
+                            </ul>
+                        </div>
+                        <div class="actual-content">
+                            <p><span>Full Name</span><br>Muhammad Saad Arif Dhillon</p>
+                            <p><span>Father Name</span><br>Muhammad Arif</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about">
                     <h5>About</h5>
                     <p><span>Full Name: <br></span>Muhammad Saad Arif Dhillon</p>
                     <p><span>Birth Date & Age: <br></span>December 31, 2002 (20y)</p>
                     <p><span>Occupation: <br></span>Student at UCP, BS(SE)</p>
                     <p><span>Location: <br></span>Architects Engineers Housing Society, Lahore, Pakistan</p>
                     <p><span>Email: <br></span>saadaryf@gmail.com</p>
-                </div>
-                <div>
+                </div> -->
+                <!-- <div>
                     <h5>Technical Skills</h5>
                     <p><span>Back-End Languages<br></span>C++, Java, MySQL</p>
                     <p><span>Front-End Languages<br></span>Html, CSS, JavaScript</p>
@@ -90,9 +121,9 @@
                     <p><span>English: <br></span>Excellent writing, Good Speaking</p>
                     <p><span>Urdu: <br></span>Native</p>
                     <p><span>Punjabi: <br></span>Native</p>
-                </div>
+                </div> -->
             </div>
-            <div class="btns">
+            <!-- <div class="btns">
                 <p>﹀</p>
                 <a href="#qualifications" class="menu-btn">More</a>
                 <a href="#projects" class="menu-btn">Projects</a>
@@ -142,23 +173,31 @@
                         <li>⊸ March 2016 - March 2018</li><br>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <div id="projects" class="projects">
-                <h5>Projects</h5>           
+                <h5>Projects</h5>
                 <div id="projects-grid" class="grid">
                     <!-- class="disabled-link to disable any link" -->
-                    <a href="https://github.com/saadaryf/Twitter-Clone"  target="_blank" ><p>Twitter Clone<br><span>Under Development</span></p><img
-                        src="img/external-link-icon.png" alt="link"></a>  
-                    <a href="https://github.com/saadaryf/Scholors-Chat" target="_blank"><p>Scholor Chats </p><img
-                            src="img/external-link-icon.png" alt="link"></a>
-                    <a href="https://github.com/saadaryf/Library-Manager-App" target="_blank"><p>Library Manager </p><img
-                            src="img/external-link-icon.png" alt="link"></a>
-                    <a href="https://github.com/saadaryf/Mini-Search-Engine" target="_blank"><p>Mini Search Engine </p><img
-                            src="img/external-link-icon.png" alt="link"></a>
-                    <a href="https://github.com/saadaryf/Grocery-Store-Database" target="_blank"><p>Grocery Store
-                        Database </p><img src="img/external-link-icon.png" alt="link"></a>
-                    <a href="https://github.com/saadaryf/Online-Food-Ordering" target="_blank"><p>Online Food Ordering </p><img
-                            src="img/external-link-icon.png" alt="link"></a>
+                    <a href="https://github.com/saadaryf/Twitter-Clone" target="_blank">
+                        <p>Twitter Clone<br><span>Under Development</span></p><img src="img/external-link-icon.png"
+                            alt="link">
+                    </a>
+                    <a href="https://github.com/saadaryf/Scholors-Chat" target="_blank">
+                        <p>Scholor Chats </p><img src="img/external-link-icon.png" alt="link">
+                    </a>
+                    <a href="https://github.com/saadaryf/Library-Manager-App" target="_blank">
+                        <p>Library Manager </p><img src="img/external-link-icon.png" alt="link">
+                    </a>
+                    <a href="https://github.com/saadaryf/Mini-Search-Engine" target="_blank">
+                        <p>Mini Search Engine </p><img src="img/external-link-icon.png" alt="link">
+                    </a>
+                    <a href="https://github.com/saadaryf/Grocery-Store-Database" target="_blank">
+                        <p>Grocery Store
+                            Database </p><img src="img/external-link-icon.png" alt="link">
+                    </a>
+                    <a href="https://github.com/saadaryf/Online-Food-Ordering" target="_blank">
+                        <p>Online Food Ordering </p><img src="img/external-link-icon.png" alt="link">
+                    </a>
                 </div>
             </div>
             <div id="services" class="services">
@@ -183,20 +222,20 @@
             <div class="intrests">
                 <div>
                     <a>
-                        <img src="img/man.png" alt=""> 
+                        <img src="img/man.png" alt="">
                     </a>
                     <a>
-                        <img src="img/programming.png" alt=""> 
+                        <img src="img/programming.png" alt="">
                     </a>
                     <a>
-                        <img src="img/weightlifting.png" alt=""> 
+                        <img src="img/weightlifting.png" alt="">
 
                     </a>
                     <a>
-                        <img src="img/badminton.png" alt=""> 
+                        <img src="img/badminton.png" alt="">
                     </a>
                     <a>
-                        <img src="img/family.png" alt=""> 
+                        <img src="img/family.png" alt="">
                     </a>
                 </div>
             </div>
@@ -230,7 +269,8 @@
                             </p>
                         </div>
                         <div class="credit">
-                            <p>Click <a href="https://www.flaticon.com/" target="_blank">here</a> to see all credits.</p><br>
+                            <p>Click <a href="https://www.flaticon.com/" target="_blank">here</a> to see all credits.
+                            </p><br>
                         </div>
                     </div>
                 </div>
@@ -239,7 +279,7 @@
         </div>
     </main>
 
-
+    <script src="js/profile.js"></script>
     <script src="js/script.js"></script>
 </body>
 

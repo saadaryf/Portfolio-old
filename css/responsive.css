@@ -34,14 +34,14 @@ html {
         letter-spacing: 1px;
     }
 
-    .profile {
+    /* .profile {
         flex-direction: column;
         margin: auto;
     }
 
     .profile div {
         width: 90%;
-    }
+    } */
     .btns p{
         display: none;
     }
@@ -123,22 +123,19 @@ html {
 
 /* tablet screens */
 @media screen and (min-width: 768px) and (max-width: 960px) {
-    .profile {
+    /* .profile {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        /* Adjust the gap as needed */
         position: relative;
         top: 1%;
         height: clamp(300px, 20%, 600px);
         width: 90%;
         margin: auto;
         align-items: stretch;
-        /* Vertically center the child divs */
         justify-items: center;
-        /* Horizontally center the child divs */
-    }
+    } */
     h2 {
         width: 90%;
         font-size: 55px;

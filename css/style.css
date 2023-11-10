@@ -114,7 +114,7 @@ h2 {
     position: relative;
     top: 0%;
     width: 50%;
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     border-radius: 10px;
     margin: auto;
@@ -135,7 +135,6 @@ h6 {
     font-weight: 550;
     text-align: center;
     margin: auto;
-    margin-bottom: 50px;
     padding: 2px 10px;
     border-radius: 5px;
     letter-spacing: 3px;
@@ -146,7 +145,7 @@ h5 {
     top: 2.5%;
     margin: auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-family: 'Crimson Text', serif;
@@ -164,8 +163,208 @@ h5 {
 6px 6px 5px rgba(0, 0, 0, 0.1),
 inset 0px 1px 10px rgba(255, 255, 255, 0.5),
 inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
-
 .profile {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-menu {
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow:
+        -6px -6px 25px 0px rgba(255, 255, 255, 0.9),
+        15px 8px 5px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-menu ul {
+    justify-content: space-between;
+}
+
+.left-menu ul li {
+    width: 90%;
+}
+
+.left-menu ul li button {
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 13px;
+    background: inherit;
+    border: 0;
+    text-align: start;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+
+    &:hover,
+    &:focus {
+        background: white;
+        transform: scale(0.98);
+        box-shadow:
+            inset 0px 1px 10px rgba(255, 255, 255, 0.7),
+            inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.right-page {
+    height: 400px;
+    width: 900px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow:
+        -6px -2px 5px rgba(255, 255, 255, 0.5),
+        6px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-menu {
+    position: relative;
+    height: 25%;
+    width: 90%;
+    margin: auto;
+}
+
+.top-menu ul {
+    flex-direction: row;
+}
+
+.top-menu ul li {
+    width: 30%;
+    height: 80%;
+}
+
+.bottom-top-buttons ul li button,
+.top-menu ul li button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: inherit;
+    border: 0;
+    border-radius: 13px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow:
+        inset 0px 1px 10px rgba(255, 255, 255, 0.7),
+        inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    &:hover,
+    &:focus {
+        box-shadow:
+            -6px -6px 25px 0px rgba(255, 255, 255, 0.9),
+            8px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.menu-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        inset 0px 1px 10px rgba(255, 255, 255, 0.7),
+        inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.top-menu button:hover .menu-img img {
+    transform: rotate(360deg);
+    transition: transform 0.7s;
+}
+
+.menu-img img {
+    width: 30px;
+}
+
+.bottom-content {
+    position: relative;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    border-radius: 13px;
+    box-shadow:
+        inset -1px -1px 5px rgba(0, 0, 0, 0.2),
+        inset 5px 5px 3px rgba(255, 255, 255, 0.7);
+}
+
+.bottom-top-buttons {
+    margin-left: 20px;
+    height: 45px;
+}
+
+.bottom-top-buttons ul {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.bottom-top-buttons ul li {
+    padding: 0px 40px 0px 15px
+}
+
+.bottom-top-buttons ul li button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-weight: 100;
+    font-size: 12px;
+    cursor: pointer;
+    background: inherit;
+    border: 0;
+    border-radius: 13px;
+    box-shadow:
+        inset 0px 1px 10px rgba(255, 255, 255, 0.7),
+        inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.actual-content {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: calc(85% - 45px);
+}
+
+.actual-content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.actual-content span {
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+}
+
+/* .profile {
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -182,7 +381,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     margin: 3%;
     margin-top: 20px;
     padding: 25px 10px;
-    width: clamp(270px, 23%, 400px);
+    width: 60%;
     border-radius: 10px;
     box-shadow:
         -6px -6px 5px rgba(255, 255, 255, 0.5),
@@ -192,7 +391,9 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     overflow: auto;
     transition: border 0.3s ease;
 }
-
+.profile .about{
+    box-shadow: none;
+}
 .profile div::before {
     content: "";
     position: absolute;
@@ -214,27 +415,29 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
 
 .profile p {
-    padding-top: 8%;
+    padding-top: 20px;
     padding-left: 5%;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .profile span {
     text-transform: uppercase;
     font-weight: 900;
     font-family: 'Crimson Text', serif;
-}
+} */
 
 .btns {
     display: flex;
     justify-content: center;
 }
-.btns p{
+
+.btns p {
     display: block;
     margin-top: -32px;
     font-size: 40px;
 }
+
 .menu-btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -373,14 +576,17 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
             10px 10px 20px rgba(0, 0, 0, 0.2);
     }
 }
-.grid p{
+
+.grid p {
     padding: 10px;
     font-size: 22px;
 }
-.grid span{
+
+.grid span {
     font-size: 12px;
     color: gray;
 }
+
 .disabled-link {
     cursor: not-allowed;
     color: rgb(173, 171, 171) !important;
@@ -398,7 +604,9 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     margin-bottom: 100px;
 }
-
+.services p{
+    font-size: 54px;
+}
 .container {
     position: relative;
     height: 80%;
@@ -455,7 +663,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     text-align: left !important;
     margin-left: 10%;
     margin-top: 2%;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .content {
@@ -482,6 +690,7 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 .content ul {
     list-style: none;
     margin-left: 10%;
+    font-size: 24px;
 }
 
 
@@ -514,7 +723,8 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     overflow-x: auto;
     width: 97%;
 }
-.intrests div:hover a{
+
+.intrests div:hover a {
     animation-play-state: paused;
 }
 
@@ -529,7 +739,8 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
     -ms-overflow-style: none;
     /* Microsoft Edge */
 }
-.intrests img{
+
+.intrests img {
     width: 80px;
 }
 
@@ -562,24 +773,24 @@ inset 2px 2px 5px rgba(0, 0, 0, 0.1); */
 
 @keyframes slide {
     100% {
-      transform: translateX(-82vw);
-      opacity: 0;
+        transform: translateX(-82vw);
+        opacity: 0;
     }
-  
+
     90% {
-      opacity: 1;
+        opacity: 1;
     }
-  
+
     50% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  
+
     0% {
-      transform: translateX(82vw);
-      opacity: 1;
+        transform: translateX(82vw);
+        opacity: 1;
     }
-  }
+}
 
 .intrests a h6 {
     font-size: 11px;
