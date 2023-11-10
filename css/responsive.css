@@ -6,13 +6,13 @@ html {
 @media only screen and (max-width: 767px) {
     .hamburger {
         display: block;
-        left: 18px;
+        right: 10px;
     }
 
     header {
         margin-top: 35px;
         margin-right: 1.5%;
-        left: 6px;
+        right: 0px;
     }
 
     header ul {
@@ -20,9 +20,11 @@ html {
         pointer-events: none;
         transition: opacity 0.2s ease, height 0.1s ease-in-out;
     }
-    h4{
+
+    h4 {
         font-size: 30px;
     }
+
     h2 {
         width: 90%;
         font-size: 45px;
@@ -42,9 +44,10 @@ html {
     .profile div {
         width: 90%;
     } */
-    .btns p{
+    .btns p {
         display: none;
     }
+
     .menu-btn {
         display: none;
     }
@@ -55,12 +58,15 @@ html {
         width: 90% !important;
         text-align: center;
     }
-    .grid p{
+
+    .grid p {
         font-size: 24px;
     }
+
     .grid a {
         font-size: 14px;
     }
+
     form {
         width: 85%;
     }
@@ -91,6 +97,14 @@ html {
         width: 98%;
     }
 
+    .content h5 {
+        font-size: 18px;
+    }
+
+    .content ul {
+        font-size: 15px;
+    }
+
     .options button {
         font-size: 10px !important;
     }
@@ -103,6 +117,7 @@ html {
         margin-top: 150px;
         transform: perspective(100px) rotateX(5deg);
     }
+
     #topBtn .rotate-icon {
         font-size: 26px !important;
         right: 5px !important;
@@ -111,6 +126,66 @@ html {
     #projects-grid img {
         display: block;
         width: 15px;
+    }
+    .bottom-top-buttons {
+        margin-left: 0px;
+    }
+    .bottom-top-buttons ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .bottom-top-buttons ul li {
+        padding: 0px 10px 0px 10px
+    }
+    .actual-content p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .left-menu {
+        width: 0px;
+        position: absolute;
+        left: 0;
+        z-index: 6;
+        display: flex;
+    }
+
+    .left-menu ul {
+        width: 0;
+        display: none;
+    }
+
+    .left-menu ul li button {
+        padding-right: 60px;
+        letter-spacing: 0;
+    }
+
+    .phone-menu-button {
+        display: block !important;
+        position: relative;
+        top: 350px;
+        left: 0;
+        height: fit-content;
+    }
+
+    .phone-menu-button button {
+        font-size: 30px;
+        padding: 15px 5px;
+        border: 0;
+        border-top-right-radius: 55%;
+        border-bottom-right-radius: 55%;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .menu-img {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-img img {
+        width: 20px;
+    }
+    .top-menu ul li button {
+        flex-direction: column;
+        font-size: 12px;
     }
 }
 
@@ -123,6 +198,7 @@ html {
 
 /* tablet screens */
 @media screen and (min-width: 768px) and (max-width: 960px) {
+
     /* .profile {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -140,15 +216,19 @@ html {
         width: 90%;
         font-size: 55px;
     }
-    .btns p{
+
+    .btns p {
         display: none;
     }
+
     .menu-btn {
         display: none;
     }
+
     form {
         width: 60%;
     }
+
     .qualifications div {
         margin-top: 100px;
         width: 70%;
@@ -159,6 +239,10 @@ html {
         display: block;
     }
 
+}
+
+.phone-menu-button {
+    display: none;
 }
 
 /* dark mode btn */

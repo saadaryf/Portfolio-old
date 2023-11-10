@@ -317,3 +317,23 @@ thirdOption.addEventListener('click', function () {
         `;
     }
 })
+
+// for mobile responsive only
+
+const menuBtn = document.querySelector('.phone-menu-button button');
+const leftDiv = document.querySelector('.left-menu');
+const menuList = document.querySelector('.left-menu ul');
+
+menuBtn.addEventListener('click', function () {
+    if (parseInt(leftDiv.style.width) === 0) {
+        leftDiv.style.width = '200px';
+        menuList.style.width = '200px';
+        menuList.style.display = 'flex';
+        menuBtn.innerText='«'; 
+    } else {
+        leftDiv.style.width = '0';
+        menuList.style.width = '0';
+        menuList.style.display = 'none';
+        menuBtn.innerText='»'; 
+    }
+});

@@ -185,6 +185,7 @@ h5 {
 .left-menu {
     height: 450px;
     width: 300px;
+    background: #000;
     border-radius: 10px;
     box-shadow:
         -6px -6px 25px 0px rgba(0, 0, 0, 0.9),
@@ -380,67 +381,13 @@ h5 {
     font-weight: 900;
     color: #fff;
 }
-
-
-/* .profile {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 1%;
-    height: clamp(300px, 18%, 500px);
-    width: 95%;
-    margin: auto;
-    align-items: stretch;
-}
-
-.profile div {
-    position: relative;
-    margin: 3%;
-    margin-top: 20px;
-    padding: 25px 10px;
-    width: 90%;
-    border-radius: 10px;
+.phone-menu-button button {
+    background-color: #333;
     box-shadow:
-        -6px -6px 5px rgba(0, 0, 0, 0.5),
-        6px 6px 5px rgba(255, 255, 255, 0.1),
-        inset 0px 1px 10px rgba(0, 0, 0, 0.5),
-        inset 2px 2px 5px rgba(255, 255, 255, 0.1);
-    overflow: auto;
-    transition: border 0.3s ease;
+    5px 5px 5px 0px rgba(0, 0, 0, 0.9), 
+    0px 6px 8px 0px rgba(255, 255, 255, 0.1); 
+    color: #fff;
 }
-
-.profile div::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    border-image: linear-gradient(90deg, #ff2f00, #0099ff);
-    border-image-slice: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.profile div:hover::before {
-    opacity: 1;
-}
-
-.profile p {
-    padding-top: 20px;
-    padding-left: 5%;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
-
-.profile span {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: 'Crimson Text', serif;
-} */
-
 .btns {
     display: flex;
     justify-content: center;
