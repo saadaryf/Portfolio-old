@@ -17,7 +17,7 @@ contactBtn.addEventListener("click", () => {
     );
     window.scrollBy({
         top: scrollHeight - window.scrollY,
-        behavior: "smooth", 
+        behavior: "smooth",
     });
 });
 
@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const darkModeButton = document.getElementById("dark-mode-button");
     const cvBtn = document.getElementById('cv-button');
-    const linkedinBtn= document.getElementById('linkedin-button');
-    const githubBtn= document.getElementById('github-button');
-    const instaBtn= document.getElementById('insta-button');
+    const linkedinBtn = document.getElementById('linkedin-button');
+    const githubBtn = document.getElementById('github-button');
+    const instaBtn = document.getElementById('insta-button');
     // Check for the initial state (e.g., based on user preferences or a cookie)
     let isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
 
@@ -165,4 +165,31 @@ hamburger.addEventListener('click', () => {
         header.style.pointerEvents = 'none';
     }
 });
+
+
+// making project boxes move with cursor
+const projectsArea = document.getElementById('projects');
+const parallaxStrength = 10;
+
+function applyParallaxEffect(e) {
+    const xOffset = (e.clientX - projectsArea.getBoundingClientRect().left) / projectsArea.offsetWidth;
+    const yOffset = (e.clientY - projectsArea.getBoundingClientRect().top) / projectsArea.offsetHeight;
+
+    const blocks = document.querySelectorAll('.grid a');
+    blocks.forEach((block) => {
+        const rotation = parallaxStrength * (xOffset - 0.5);
+        block.style.transform = `rotate(${rotation}deg)`;
+    });
+}
+function resetParallaxEffect() {
+    const blocks = document.querySelectorAll('.grid a');
+    blocks.forEach((block) => {
+        block.style.transform = 'rotate(0deg)';
+    });
+}
+if (window.innerWidth >= 960) { 
+    projectsArea.addEventListener('mouseover', applyParallaxEffect);
+    projectsArea.addEventListener('mouseleave', resetParallaxEffect);
+}
+
 

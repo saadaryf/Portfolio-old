@@ -324,7 +324,7 @@ const menuBtn = document.querySelector('.phone-menu-button button');
 const leftDiv = document.querySelector('.left-menu');
 const menuList = document.querySelector('.left-menu ul');
 
-let isClosed = false;
+let isClosed = true;
 
 menuBtn.addEventListener('click', function () {
     if (isClosed) {
