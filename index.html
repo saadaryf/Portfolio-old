@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/loading-site.css">
+    <link rel="stylesheet" href="css/following-eyes.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -19,7 +20,6 @@
 
     <!-- overlay to cover the screen on phone screens -->
     <div class="overlay" style="display: none;"></div>
-
     <!-- ham -->
     <div class="hamburger">
         <a class="ham-lines" href="#ham">
@@ -62,6 +62,19 @@
         </button>
         <!-- main class -->
         <div class="main">
+            <!-- welcome bot -->
+            <div class="bot">
+                <div class="eyes">
+                    <div class="left-eye">
+                        <div class="eyeball"></div>
+                    </div>
+                    <div class="right-eye">
+                        <div class="eyeball"></div>
+                    </div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+
             <h4>Hi, </h4>
             <h2>I'm Saad Arif</h2>
             <h6>Software Engineer | Web Developer</h6>
@@ -81,9 +94,18 @@
                 <div class="right-page">
                     <div class="top-menu">
                         <ul>
-                            <li><button class="about-class" id="first-option" ><div class="menu-img"><img src="img/user.png" alt=""></div><p>Name</p></button></li>
-                            <li><button id="second-option" ><div class="menu-img"><img src="img/age.png" alt=""></div><p>Age</p></button></li>
-                            <li><button id="third-option" ><div class="menu-img"><img src="img/location-pin.png" alt=""></div><p>Location</p></button></li>
+                            <li><button class="about-class" id="first-option">
+                                    <div class="menu-img"><img src="img/user.png" alt=""></div>
+                                    <p>Name</p>
+                                </button></li>
+                            <li><button id="second-option">
+                                    <div class="menu-img"><img src="img/age.png" alt=""></div>
+                                    <p>Age</p>
+                                </button></li>
+                            <li><button id="third-option">
+                                    <div class="menu-img"><img src="img/location-pin.png" alt=""></div>
+                                    <p>Location</p>
+                                </button></li>
                         </ul>
                     </div>
                     <div class="bottom-content">
@@ -204,6 +226,7 @@
         </div>
     </main>
 
+    <script src="js/following-eyes.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/script.js"></script>
 </body>

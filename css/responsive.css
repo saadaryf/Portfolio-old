@@ -35,15 +35,6 @@ html {
         font-size: 14px;
         letter-spacing: 1px;
     }
-
-    /* .profile {
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .profile div {
-        width: 90%;
-    } */
     .btns p {
         display: none;
     }
@@ -177,6 +168,12 @@ html {
     .top-menu ul li button {
         flex-direction: column;
         font-size: 12px;
+    }
+    .bot {
+        top: 5px;
+        left: 5px;
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 
