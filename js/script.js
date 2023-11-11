@@ -148,30 +148,33 @@ document.getElementById('full-stack-button').addEventListener('click', function 
 
 });
 
-// toogle hamburger lines to make a cross
+// toogle hamburger lines to make a cross 
 const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('header ul');
 
-function closeTopMenu() {
-    hamburger.classList.remove('open');
-    header.style.opacity = 0;
-    header.style.display = 'none';
+if(window.innerWidth <= 768){
+    function closeTopMenu() {
+        hamburger.classList.remove('open');
+        header.style.opacity = 0;
+        header.style.display = 'none';
+    }
+    
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+    
+        // showing and hiding menu/header ul
+        if ((hamburger.classList.contains('open'))) {
+            header.style.opacity = 1;
+             header.style.display = 'flex';
+        } else {
+            closeTopMenu();
+        }
+    });
+    document.body.addEventListener('click', function (e) {
+        if (!hamburger.contains(e.target)) {
+            closeTopMenu();
+        }
+    });
 }
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-
-    // showing and hiding menu/header ul
-    if ((hamburger.classList.contains('open'))) {
-        header.style.opacity = 1;
-         header.style.display = 'flex';
-    } else {
-        closeTopMenu();
-    }
-});
-document.body.addEventListener('click', function (e) {
-    if (!hamburger.contains(e.target)) {
-        closeTopMenu();
-    }
-});
 
