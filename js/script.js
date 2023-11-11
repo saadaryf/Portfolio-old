@@ -152,6 +152,12 @@ document.getElementById('full-stack-button').addEventListener('click', function 
 const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('header ul');
 
+function closeTopMenu() {
+    hamburger.classList.remove('open');
+    header.style.opacity = 0;
+    header.style.display = 'none';
+}
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 
@@ -160,9 +166,12 @@ hamburger.addEventListener('click', () => {
         header.style.opacity = 1;
          header.style.display = 'flex';
     } else {
-        header.style.opacity = 0;
-        header.style.display = 'none';
+        closeTopMenu();
     }
 });
-
+document.body.addEventListener('click', function (e) {
+    if (!hamburger.contains(e.target)) {
+        closeTopMenu();
+    }
+});
 
