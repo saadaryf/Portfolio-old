@@ -113,15 +113,48 @@ header ul li:nth-child(6) img {
     overflow-y: auto;
 }
 
+.intro {
+    position: relative;
+    height: 95vh;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-btn a {
+    background-color: #333;
+    border: 1px solid #111;
+    color: #FFF; 
+    padding: 20px 70px;
+    border-radius: 10px;
+    font-size: 20px; 
+    margin-top: 20px;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px #111, -5px -5px 15px #222; 
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: inline-block;
+
+    &:hover {
+        box-shadow: 10px 10px 20px #000, -10px -10px 20px #222;
+        transform: translate(2px, 2px);
+    }
+}
+
 h4 {
     position: relative;
     top: 0.2%;
-    width: 20%;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 250;
-    text-align: center;
     border-radius: 10px;
-    margin: auto;
     padding: 5px 10px;
     letter-spacing: 2px;
 }
@@ -129,13 +162,9 @@ h4 {
 h2 {
     position: relative;
     top: 0%;
-    width: 50%;
-    font-size: 70px;
-    text-align: center;
+    font-size: 110px;
     border-radius: 10px;
-    margin: auto;
     padding: 0px 10px;
-    /* box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.2) inset; */
     letter-spacing: 4px;
     font-family: 'Crimson Text', serif;
     background: linear-gradient(90deg, #ff2f00, #0099ff);
@@ -147,16 +176,13 @@ h2 {
 h6 {
     position: relative;
     top: 0.2%;
-    width: 60%;
     font-size: 16px;
     font-weight: 550;
-    text-align: center;
-    margin: auto;
     padding: 2px 10px;
-    padding-bottom: 4px;
     border-radius: 5px;
     letter-spacing: 3px;
 }
+
 
 h5 {
     position: relative;
@@ -175,7 +201,8 @@ h5 {
 
 .profile {
     display: flex;
-    height: 500px;
+    min-height: 400px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -183,7 +210,7 @@ h5 {
 
 .left-menu {
     position: relative;
-    height: 450px;
+    height: 90%;
     width: 300px;
     background: #000;
     border-radius: 10px;
@@ -192,6 +219,7 @@ h5 {
         15px 8px 5px 0px rgba(0, 0, 0, 0.1);
     background-color: #111;
 }
+
 .profile ul {
     position: relative;
     list-style: none;
@@ -236,7 +264,7 @@ h5 {
 }
 
 .right-page {
-    height: 400px;
+    height: 80%;
     width: 900px;
     border-radius: 10px;
     border-top-left-radius: 0px;
@@ -246,6 +274,7 @@ h5 {
         6px 6px 5px rgba(0, 0, 0, 0.1);
     background-color: #111;
 }
+
 .top-menu {
     position: relative;
     height: 25%;
@@ -278,12 +307,14 @@ h5 {
     font-weight: 900;
     font-size: 15px;
     text-transform: uppercase;
+    transition: all 0.3s;
     box-shadow:
         inset 0px 1px 10px rgba(0, 0, 0, 0.7),
         inset 1px 1px 3px rgba(255, 255, 255, 0.3);
 
     &:hover,
     &:focus {
+        transform: translate(2px, -2px);
         box-shadow:
             -6px -6px 25px 0px rgba(0, 0, 0, 0.9),
             8px 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -346,7 +377,7 @@ h5 {
     cursor: pointer;
     background: inherit;
     border: 0;
-    border-radius: 13px;
+    border-radius: 10px;
     box-shadow:
         inset 0px 1px 10px rgba(0, 0, 0, 0.7),
         inset 1px 1px 3px rgba(255, 255, 255, 0.3);
@@ -379,49 +410,14 @@ h5 {
     font-weight: 900;
     color: #fff;
 }
+
 .phone-menu-button button {
     background-color: #333;
     box-shadow:
-    5px 5px 5px 0px rgba(0, 0, 0, 0.9), 
-    0px 6px 8px 0px rgba(255, 255, 255, 0.1); 
+        5px 5px 5px 0px rgba(0, 0, 0, 0.9),
+        0px 6px 8px 0px rgba(255, 255, 255, 0.1);
     color: #fff;
 }
-
-.btns {
-    display: flex;
-    justify-content: center;
-}
-.btns p{
-    display: block;
-    margin-top: -32px;
-    font-size: 40px;
-}
-.menu-btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 70%;
-    letter-spacing: 2px;
-    cursor: pointer;
-    display: none;
-    border-radius: 10px;
-    width: 5%;
-    margin: 34px 2% 2% 2%;
-    text-align: center;
-    padding: 10px 30px;
-    box-shadow:
-        -5px -5px 4px rgba(0, 0, 0, 0.7),
-        5px 5px 4px rgba(255, 255, 255, 0.3);
-
-    /* Hover effect */
-    &:hover {
-        font-size: 65%;
-        box-shadow:
-            inset 0px 1px 10px rgba(0, 0, 0, 0.7),
-            inset 1px 1px 3px rgba(255, 255, 255, 0.3);
-    }
-}
-
 
 .intrests h5,
 .contact h5,
@@ -442,6 +438,7 @@ h5 {
 .projects h5 {
     margin-top: 70px;
 }
+
 .projects {
     margin: auto;
     margin-top: 50px;
@@ -487,16 +484,21 @@ h5 {
         5px 5px 4px rgba(255, 255, 255, 0.3);
     transition: box-shadow 0.2s;
 }
-.grid span{
+
+.grid span {
     font-size: 12px;
     color: gray;
 }
-.grid a:hover span{
+
+.grid a:hover span {
     color: #fff;
+    text-decoration: underline;
 }
-.grid p{
+
+.grid p {
     padding: 10px;
 }
+
 .disabled-link {
     cursor: not-allowed;
     color: gray !important;
@@ -630,7 +632,8 @@ h5 {
     overflow-x: auto;
     width: 97%;
 }
-.intrests div:hover a{
+
+.intrests div:hover a {
     animation-play-state: paused;
 }
 
@@ -645,9 +648,11 @@ h5 {
     -ms-overflow-style: none;
     /* Internet Explorer/Edge */
 }
-.intrests img{
+
+.intrests img {
     width: 80px;
 }
+
 .intrests a {
     border-radius: 10px;
     font-family: 'Crimson Text', serif;

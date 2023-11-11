@@ -21,28 +21,31 @@ html {
         transition: opacity 0.2s ease, height 0.1s ease-in-out;
     }
 
+    .intro { 
+        height: 20vh !important;
+        justify-content: center;
+    }
+
     h4 {
         font-size: 30px;
     }
 
     h2 {
-        width: 90%;
         font-size: 45px;
     }
 
     h6 {
-        width: 90%;
         font-size: 14px;
         letter-spacing: 1px;
     }
-    .btns p {
+    .profile{
+        margin-top: -60px;
+        height: 65vh;
+        overflow: auto !important;
+    }
+    .more-btn{
         display: none;
     }
-
-    .menu-btn {
-        display: none;
-    }
-
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
@@ -71,6 +74,7 @@ html {
         bottom: 10px !important;
         right: 15px !important;
     }
+
     #dark-mode-button {
         transform: rotate(-5deg) !important;
         top: 0.2% !important;
@@ -109,24 +113,30 @@ html {
         font-size: 26px !important;
         right: 5px !important;
     }
+
     .bottom-top-buttons {
         margin-left: 0px;
     }
+
     .bottom-top-buttons ul {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
     .bottom-top-buttons ul li {
         padding: 0px 10px 0px 10px
     }
+
     .actual-content p {
         font-size: 20px;
         margin-bottom: 10px;
     }
+
     .left-menu {
-        width: 0;
         position: absolute;
         left: 0;
+        width: 0;
+        height: 60vh;
         z-index: 99 !important;
         display: flex;
     }
@@ -158,17 +168,21 @@ html {
         cursor: pointer;
         transition: all 0.3s;
     }
+
     .menu-img {
         width: 30px;
         height: 30px;
     }
+
     .menu-img img {
         width: 20px;
     }
+
     .top-menu ul li button {
         flex-direction: column;
         font-size: 12px;
     }
+
     .bot {
         top: 5px;
         left: 5px;
@@ -186,33 +200,23 @@ html {
 
 /* tablet screens */
 @media screen and (min-width: 768px) and (max-width: 960px) {
-
-    /* .profile {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        position: relative;
-        top: 1%;
-        height: clamp(300px, 20%, 600px);
-        width: 90%;
-        margin: auto;
-        align-items: stretch;
-        justify-items: center;
-    } */
+    .intro {
+        height: 24vh;
+        justify-content: center;
+    }
+    .profile{
+        height: 60vh;
+    }
+    .more-btn{
+        display: none;
+    }
     h2 {
-        width: 90%;
         font-size: 55px;
     }
 
     .btns p {
         display: none;
     }
-
-    .menu-btn {
-        display: none;
-    }
-
     form {
         width: 60%;
     }
@@ -235,6 +239,7 @@ html {
     height: 0;
     font-size: 25px;
 }
+
 /* shake animation for button */
 .shake-animation {
     animation: shake 0.2s infinite;
@@ -244,15 +249,19 @@ html {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-2px);
     }
+
     50% {
         transform: translateX(2px);
     }
+
     75% {
         transform: translateX(-2px);
     }
+
     100% {
         transform: translateX(2px);
     }

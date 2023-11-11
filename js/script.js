@@ -20,7 +20,6 @@ contactBtn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
-
 //switching dark mode
 document.addEventListener("DOMContentLoaded", function () {
     const themeLink = document.getElementById('theme-stylesheet');
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             contactBtn.querySelector("img").src = "img/contact-dark.png";
         } else {
             themeLink.href = "css/dark_style.css";
-
+            
             darkModeButton.querySelector("img").src = "img/day-mode.png";
             cvBtn.querySelector("img").src = "img/cv-light.PNG";
             linkedinBtn.querySelector("img").src = "img/linkedin-light.png";
