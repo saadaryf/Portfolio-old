@@ -110,8 +110,8 @@ html {
     }
 
     #topBtn .rotate-icon {
-        font-size: 26px !important;
-        right: 5px !important;
+        font-size: 25px !important;
+        right: 4px !important;
     }
 
     .bottom-top-buttons {
@@ -286,6 +286,9 @@ html {
     border-radius: 5px;
     padding: 15px;
     transition: box-shadow 0.2s, background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #topBtn .rotate-icon {
@@ -293,7 +296,7 @@ html {
     width: 25px;
     height: 30px;
     bottom: 0px;
-    right: 0px;
+    right: 2px;
     font-size: 20px;
     margin-right: 2px;
     outline: none;
@@ -301,4 +304,5 @@ html {
     display: inline-block;
     transform: rotate(-90deg);
     color: black;
+    margin: auto;
 }
