@@ -341,7 +341,13 @@ const leftDiv = document.querySelector('.left-menu');
 const menuList = document.querySelector('.left-menu ul');
 
 let isClosed = true;
-
+function closeMenu() {
+    leftDiv.style.width = '0';
+    menuList.style.width = '0';
+    menuList.style.display = 'none';
+    menuBtn.innerText = '»';
+    isClosed = true;
+}
 menuBtn.addEventListener('click', function () {
     if (isClosed) {
         leftDiv.style.width = '200px';
@@ -350,13 +356,15 @@ menuBtn.addEventListener('click', function () {
         menuBtn.innerText = '«';
         isClosed = false;
     } else {
-        leftDiv.style.width = '0';
-        menuList.style.width = '0';
-        menuList.style.display = 'none';
-        menuBtn.innerText = '»';
-        isClosed = true;
+        closeMenu();
     }
 });
+document.body.addEventListener('click', function (event) {
+    if (!isClosed && !leftDiv.contains(event.target)) {
+        closeMenu();
+    }
+});
+
 
 function shakeMenuButton() {
     menuBtn.classList.add('shake-animation');
